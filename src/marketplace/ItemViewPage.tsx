@@ -1,15 +1,21 @@
 import React, { ReactElement } from 'react'
+import { useQuery } from 'react-query';
 import { useParams } from 'react-router';
-const items = require('../fixtures/items.json') as Item[];
+import { getItem } from './ApiClient/ApiClient';
 
-interface Props {
-  
-}
 
-export default function ItemViewPage({}: Props): ReactElement {
+export default function ItemViewPage(): ReactElement {
   const {id} =  useParams<{id: string}>();
 
-  const item: Item = items.filter((item: Item) => (item.id + "") === id)?.[0];
+  const {isLoading, isError, data: item} = useQuery<any>(`item${id}`, () => getItem(id));
+
+  if (isLoading) {
+    return <div>Loading</div>;
+  }
+
+  if (isError) {
+    return <div>Error</div>
+  }
 
   if (!item) {
     return <div><h1>Not found</h1></div>

@@ -46,7 +46,7 @@ export default function SearchFilters({onFilterChange, filters, style}: Props): 
   return (
     <div style={style}>
       <div>
-        <input type="text" placeholder="Search" onChange={handleSearchChange} />
+        <input type="text" placeholder="Search" value={search} onChange={handleSearchChange} />
       </div>
       <div>
         <input type="range" id="price" name="price" min="0" step={10} max="100" value={minPrice} onChange={handleMinPriceChange} />
