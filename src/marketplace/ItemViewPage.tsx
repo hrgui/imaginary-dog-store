@@ -1,11 +1,15 @@
 import React, { ReactElement } from 'react'
+import { useMutation } from 'react-query';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router';
-import { getItem } from './ApiClient/ApiClient';
+import { buyItem, getItem } from './ApiClient/ApiClient';
 
 
 export default function ItemViewPage(): ReactElement {
   const {id} =  useParams<{id: string}>();
+  const [doBuyItem] = useMutation((variables: Item) => {
+    return buyItem(variables);
+  });
 
   const {isLoading, isError, data: item} = useQuery<any>(`item${id}`, () => getItem(id));
 
@@ -26,7 +30,7 @@ export default function ItemViewPage(): ReactElement {
       <h1>{item.name}</h1>
       <img src={item.largeImg} alt={item.name} />
       <h3>${item.price}</h3>
-      <button onClick={e => alert('not implemented')}>
+      <button onClick={e => doBuyItem(item)}>
         Buy Now
       </button>
     </div>

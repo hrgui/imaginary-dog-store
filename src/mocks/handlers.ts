@@ -1,6 +1,6 @@
 import { MockedRequest, rest } from 'msw'
 const items = require("../fixtures/items.json");
-
+const myCollection: any[] = [];
 
 export const handlers = [
   rest.post('/login', (req: MockedRequest<any>, res, ctx) => {
@@ -32,5 +32,15 @@ export const handlers = [
     return res(
       ctx.json(item)
     );
+  }),
+  rest.get('/api/collection', (req, res, ctx) => {
+    return res(ctx.json(myCollection));
+  }),
+  rest.post('/api/collection', (req, res, ctx) => {
+    const body = req.body;
+
+    myCollection.push(body);
+
+    return res(ctx.json(myCollection));
   })
 ]
