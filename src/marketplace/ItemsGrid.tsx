@@ -9,10 +9,13 @@ interface Props {
 
 export default function ItemsGrid({ style, onItemView, items }: Props): ReactElement {
   return (
-    <div style={{ ...style, display: "flex", width: "75%", flexWrap: "wrap" }}>
-      {items.map((item) => {
-        return <Item onView={onItemView} item={item} key={item.id} />;
-      })}
+    <div style={style}>
+      <div>Showing {items.length} items</div>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        {items.map((item) => {
+          return <Item onView={onItemView} item={item} key={item.id} />;
+        })}
+      </div>
     </div>
   );
 }

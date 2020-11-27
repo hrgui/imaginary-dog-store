@@ -7,3 +7,9 @@ interface Item {
   largeImg: string;
   price: string;
 }
+
+interface Filters {
+  search?: string;
+  minPrice: number;
+  maxPrice: number;
+}
