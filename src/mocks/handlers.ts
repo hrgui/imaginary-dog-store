@@ -1,6 +1,7 @@
 import { MockedRequest, rest } from 'msw'
 const items = require("../fixtures/items.json");
-const myCollection: any[] = [];
+let myCollection: any[] = [];
+let cart: any[] = [];
 
 export const handlers = [
   rest.post('/login', (req: MockedRequest<any>, res, ctx) => {
@@ -20,6 +21,15 @@ export const handlers = [
       ctx.json(items)
     )
   }),
+  rest.get('/api/cart', (req: MockedRequest<Item>, res, ctx) => {
+    return res(ctx.json(cart));
+  }),
+  rest.post('/api/cart', (req: MockedRequest<Item>, res, ctx) => {
+    const item = req.body;
+    cart.push(item);
+
+    return res(ctx.json(cart));
+  }),
   rest.get('/api/item/:itemId', (req: MockedRequest<any, {itemId: string}>, res, ctx) => {
     const {itemId} = req.params;
 
@@ -36,11 +46,10 @@ export const handlers = [
   rest.get('/api/collection', (req, res, ctx) => {
     return res(ctx.json(myCollection));
   }),
-  rest.post('/api/collection', (req, res, ctx) => {
+  rest.post('/api/checkout', (req: MockedRequest<Item[]>, res, ctx) => {
     const body = req.body;
-
-    myCollection.push(body);
-
+    myCollection = myCollection.concat(body);
+    cart = [];
     return res(ctx.json(myCollection));
   })
 ]

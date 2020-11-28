@@ -13,10 +13,23 @@ export async function getCollection() {
   return res.json();
 }
 
-export async function buyItem(data: Item) {
-  const res = await fetch(`/api/collection`, {method: "POST", headers: {
+export async function checkout(cart: Item[]) {
+  const res = await fetch(`/api/checkout`, {method: "POST", headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+  }, body: JSON.stringify(cart)});
+  return res.json();
+}
+
+export async function addItemToCart(data: Item) {
+  const res = await fetch(`/api/cart`, {method: "POST", headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json'
   }, body: JSON.stringify(data)});
+  return res.json();
+}
+
+export async function getCart() {
+  const res = await fetch(`/api/cart`);
   return res.json();
 }
