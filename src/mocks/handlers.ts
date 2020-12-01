@@ -16,9 +16,24 @@ export const handlers = [
       })
     )
   }),
-  rest.get('/api/search', (req, res, ctx) => {
+  rest.get('/api/search', (req: MockedRequest<SearchParams>, res, ctx) => {
+    let itemsToSend = items;
+    let {limit = 20, offset = 0} = req.body || {};
+    limit = +limit;
+    offset = +offset;
+    
+    itemsToSend = itemsToSend.slice(offset, limit);
+
+    const hasMore = itemsToSend.length >= limit || limit + offset < items.length;
+
     return res(
-      ctx.json(items)
+      ctx.json({
+        items: itemsToSend,
+        count: items.length,
+        limit,
+        offset,
+        hasMore
+      })
     )
   }),
   rest.get('/api/cart', (req: MockedRequest<Item>, res, ctx) => {

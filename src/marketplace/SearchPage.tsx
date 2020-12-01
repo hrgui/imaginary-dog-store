@@ -2,14 +2,18 @@ import React, { ReactElement } from "react";
 import SearchFilters from "./SearchFilters";
 import ItemsGrid from "./ItemsGrid";
 import { useHistory } from "react-router";
-import {useQuery} from 'react-query';
+import {useInfiniteQuery} from 'react-query';
 import {getItems} from './ApiClient/ApiClient';
 
 
 export default function SearchPage(): ReactElement {
-  const {isLoading, data: items = []} = useQuery<any, any>("items", getItems);
+  const {isLoading, data, canFetchMore, fetchMore} = useInfiniteQuery<any, any>("items", getItems, {
+    getFetchMore: (lastGroup) => lastGroup.hasMore
+  });
+  const dataRecord : List<any> = data?.[data?.length - 1] || {};
+  const {items = [], count, hasMore} = dataRecord;
   const history = useHistory();
-  const [filters, setFilters] = React.useState<Filters>({minPrice: 0, maxPrice: 100});
+  const [filters, setFilters] = React.useState<Filters>({minPrice: 0, maxPrice: 120});
   const currentItems = items.filter((item: Item) => {
     if (!filters) {
       return true;
@@ -30,6 +34,16 @@ export default function SearchPage(): ReactElement {
     <div style={{ display: "flex" }}>
       <SearchFilters filters={filters} style={{width: "25%"}} onFilterChange={filters => setFilters(filters)} />
       <ItemsGrid
+        onLoadMore={(x) => {
+          // console.log(x, refetch);
+          // debugger;
+          // console.log(x, refetch);
+          // return refetch(x);
+
+          return fetchMore(x);
+        }}
+        hasMore={!!canFetchMore}
+        count={count}
         items={currentItems}
         style={{ marginLeft: "8px", width: "75%" }}
         onItemView={({ id }) => history.push(`/item/${id}`)}

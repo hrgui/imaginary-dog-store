@@ -13,3 +13,16 @@ interface Filters {
   minPrice: number;
   maxPrice: number;
 }
+
+interface SearchParams {
+  limit?: string | number;
+  offset?: string | number;
+}
+
+interface List<T> {
+  items: T[],
+  count: number;
+  limit: number;
+  offset: number;
+  hasMore: boolean;
+}

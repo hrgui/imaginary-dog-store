@@ -49,11 +49,11 @@ export default function SearchFilters({onFilterChange, filters, style}: Props): 
         <input type="text" placeholder="Search" value={search} onChange={handleSearchChange} />
       </div>
       <div>
-        <input type="range" id="price" name="price" min="0" step={10} max="100" value={minPrice} onChange={handleMinPriceChange} />
+        <input type="range" id="price" name="price" min="0" step={10} max="120" value={minPrice} onChange={handleMinPriceChange} />
         <label htmlFor="price">Min Price ${minPrice.toFixed(2)}</label>
       </div>
       <div>
-        <input type="range" id="price" name="price" min="0" step={10} max="100" value={maxPrice} onChange={handleMaxPriceChange} />
+        <input type="range" id="price" name="price" min="0" step={10} max="120" value={maxPrice} onChange={handleMaxPriceChange} />
         <label htmlFor="price">Max Price: ${maxPrice.toFixed(2)}</label>
       </div>
     </div>

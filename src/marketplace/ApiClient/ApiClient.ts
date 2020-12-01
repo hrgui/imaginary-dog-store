@@ -1,4 +1,5 @@
-export async function getItems() {
+export async function getItems(x, cursor) {
+  console.log(cursor);
   const res = await fetch('/api/search');
   return res.json();
 }
