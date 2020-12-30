@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/imaginary-dog-store/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/imaginary-dog-store/static/js/main.20262b90.chunk.js",
+    "main.js.map": "/imaginary-dog-store/static/js/main.20262b90.chunk.js.map",
+    "runtime-main.js": "/imaginary-dog-store/static/js/runtime-main.f6898e84.js",
+    "runtime-main.js.map": "/imaginary-dog-store/static/js/runtime-main.f6898e84.js.map",
+    "static/js/2.60fadc0c.chunk.js": "/imaginary-dog-store/static/js/2.60fadc0c.chunk.js",
+    "static/js/2.60fadc0c.chunk.js.map": "/imaginary-dog-store/static/js/2.60fadc0c.chunk.js.map",
+    "index.html": "/imaginary-dog-store/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/imaginary-dog-store/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.60fadc0c.chunk.js.LICENSE.txt": "/imaginary-dog-store/static/js/2.60fadc0c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6898e84.js",
+    "static/js/2.60fadc0c.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.20262b90.chunk.js"
+  ]
+}
