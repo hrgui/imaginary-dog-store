@@ -1,11 +1,11 @@
 import { ReactElement } from "react";
 import { Link } from "react-router-dom";
 
-type Props = {} & PetType;
+type Props = {} & Partial<PetType>;
 
-export function PetTypeCell({ id, name, thumbnail, low, high, count }: Props): ReactElement {
+export function PetTypeCell({ id, name, thumbnail, low, high, count = 0 }: Props): ReactElement {
   const typeDataEl = (
-    <div className="mr-4 mb-4 cursor-pointer w-full sm:w-auto">
+    <div className="cursor-pointer w-full sm:w-auto">
       <h2 className="text-2xl font-semibold">{name}(s)</h2>
       <div className="w-full sm:w-[300px] h-[300px] bg-gray-200">
         <img
@@ -27,7 +27,7 @@ export function PetTypeCell({ id, name, thumbnail, low, high, count }: Props): R
   }
 
   return (
-    <Link to={`/animals?type_id=${id}`} className="w-full sm:w-auto">
+    <Link to={`/pets?type_id=${id}`} className="w-full sm:w-auto">
       {typeDataEl}
     </Link>
   );

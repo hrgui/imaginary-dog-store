@@ -1,7 +1,7 @@
 interface Pet {
-  /** ID of the animal */
+  /** ID of the pet */
   id: string;
-  /** Name of the Animal */
+  /** Name of the Pet */
   name: string;
   /** Refers to the thumbnail used for the small image */
   thumbnail: string;
@@ -9,27 +9,27 @@ interface Pet {
   large_img: string;
   /** Price - in dollars */
   price: string;
-  /** Animal Type ID */
+  /** Pet Type ID */
   type_id: string;
 }
 
 interface PetType {
-  /** ID of the animal type */
+  /** ID of the pet type */
   id: string;
-  /** Animal type name */
+  /** Pet type name */
   name: string;
-  /** Refers to the thumbnail used for the small image (represents all animals in that type) */
+  /** Refers to the thumbnail used for the small image (represents all pets in that type) */
   thumbnail: string;
   /** Price distribution, highest to lowest */
   price_distribution: string[];
-  /** Number of animals that fall under this type */
+  /** Number of pets that fall under this type */
   count: number;
   low?: { id: string; price: string };
   high?: { id: string; price: string };
 }
 
 interface PetSearchParams {
-  type: "animal_type" | "animal";
+  type: "pet_type" | "pet";
 }
 
 interface PetSearchBody {

@@ -36,15 +36,15 @@ See [`./src/types.d.ts`](./src/types.d.ts) for more info.
 
 ## /api/search/:type
 
-Does a search for animals or animal types.
+Does a search for pets or pet types.
 
 ### Input
 
 #### InputParams
 
 ```ts
-interface AnimalSearchParams {
-  type: "animal_type" | "animal";
+interface PetSearchParams {
+  type: "pet_type" | "pet";
 }
 ```
 
@@ -62,12 +62,12 @@ interface PetFilters {
 ### Output
 
 ```ts
-type Output = Animal[];
+type Output = Pet[];
 ```
 
-## /api/animal/:id
+## /api/pet/:id
 
-Fetches one animal.
+Fetches one Pet.
 
 ### Output
 
@@ -78,7 +78,7 @@ No content
 #### 200 Success
 
 ```ts
-type Output = Animal[];
+type Output = Pet[];
 ```
 
 ## /api/checkout
@@ -91,7 +91,7 @@ type Output = Animal[];
 #### 200 Success
 
 ```ts
-type Output = Animal[];
+type Output = Pet[];
 ```
 
 ## /api/cart
@@ -103,7 +103,7 @@ Adds the item to the cart.
 #### 200 Success
 
 ```ts
-type Output = Animal[];
+type Output = Pet[];
 ```
 
 ## /collection
@@ -115,7 +115,7 @@ Obtains their collection. Can return nothing back.
 #### 200 Success
 
 ```ts
-type Output = Animal[];
+type Output = Pet[];
 ```
 
 # Tech Stack

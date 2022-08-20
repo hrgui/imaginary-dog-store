@@ -3,13 +3,13 @@ import { useMutation } from "@tanstack/react-query";
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate, useParams } from "react-router-dom";
 
-import { getAnimal, addItemToCart } from "~/api-client/ApiClient";
+import { getPet, addItemToCart } from "~/api-client/ApiClient";
 import Button from "~/components/ui/Button";
 import PageLoading from "~/components/app/PageLoading";
 
 export function PetViewPage(): ReactElement {
   const { id } = useParams<{ id: string }>();
-  const { isLoading, data: item } = useQuery<any>([`item${id}`], () => getAnimal(id as string));
+  const { isLoading, data: item } = useQuery<any>([`item${id}`], () => getPet(id as string));
   const mutation = useMutation<any, any, Pet>(addItemToCart);
   const navigate = useNavigate();
 

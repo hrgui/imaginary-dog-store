@@ -1,16 +1,16 @@
-export async function getAnimals(filters: PetFilters) {
+export async function getPets(filters: PetFilters) {
   const params = new URLSearchParams(filters as any);
-  const res = await fetch(`https://example.pet.shop/api/search/animals?${params.toString()}`);
+  const res = await fetch(`https://example.pet.shop/api/search/pets?${params.toString()}`);
   return res.json();
 }
 
-export async function getAnimalTypes() {
-  const res = await fetch("https://example.pet.shop/api/search/animal_type");
+export async function getPetTypes() {
+  const res = await fetch("https://example.pet.shop/api/search/pet_type");
   return res.json();
 }
 
-export async function getAnimal(id: number | string) {
-  const res = await fetch(`https://example.pet.shop/api/animal/${id}`);
+export async function getPet(id: number | string) {
+  const res = await fetch(`https://example.pet.shop/api/pet/${id}`);
   return res.json();
 }
 

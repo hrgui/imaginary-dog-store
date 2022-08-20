@@ -23,14 +23,14 @@ describe("has a collection through pay now", () => {
     renderWithAppProvider(<AppRoutes />, {
       routerProps: {
         initialEntries: [
-          "/animals?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+          "/pets?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
         ],
       },
     });
 
     //assert
     // TODO: assumption - assertion is using default handler and testing the handler logic
-    expect(await screen.findByText(/Showing \d+ animals/)).toBeInTheDocument();
+    expect(await screen.findByText(/Showing \d+ pets/)).toBeInTheDocument();
     const buyNow = await screen.findAllByText(/Buy Now/);
     expect(buyNow.length).toEqual(16);
 

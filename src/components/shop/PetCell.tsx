@@ -28,7 +28,7 @@ export function PetCell({
 
   return (
     <div
-      className={classnames("mr-4 mb-4 flex flex-col w-full sm:w-auto", {
+      className={classnames("flex flex-col w-full sm:w-auto", {
         ["cursor-pointer"]: isCollection,
       })}
     >

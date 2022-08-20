@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 
 import SearchFilters from "~/components/shop/SearchFilters";
 import ItemsGrid from "~/components/shop/PetsGrid";
-import { getAnimals } from "~/api-client/ApiClient";
+import { getPets } from "~/api-client/ApiClient";
 
 interface Props {
   filters?: PetFilters;
@@ -21,12 +21,12 @@ export function PetsPage({ filters: defaultFilters, ...props }: Props): ReactEle
     }
   );
   const { isLoading, data: items = [] } = useQuery<any, any>(["items", filters], () =>
-    getAnimals(filters)
+    getPets(filters)
   );
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate(`/animals?${new URLSearchParams(filters as any).toString()}`, { replace: true });
+    navigate(`/pets?${new URLSearchParams(filters as any).toString()}`, { replace: true });
   }, [history, filters]);
 
   return (
@@ -38,7 +38,7 @@ export function PetsPage({ filters: defaultFilters, ...props }: Props): ReactEle
       />
       <ItemsGrid
         isLoading={isLoading}
-        animals={items}
+        pets={items}
         className="w-full sm:w-[75%] sm:ml-[8px]"
         onItemView={({ id }) => navigate(`/item/${id}`)}
       />

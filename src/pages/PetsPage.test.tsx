@@ -10,14 +10,14 @@ describe("buy now and regular click", () => {
     renderWithAppProvider(<AppRoutes />, {
       routerProps: {
         initialEntries: [
-          "/animals?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+          "/pets?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
         ],
       },
     });
 
     //assert
     // TODO: assumption - assertion is using default handler and testing the handler logic
-    expect(await screen.findByText(/Showing \d+ animals/)).toBeInTheDocument();
+    expect(await screen.findByText(/Showing \d+ pets/)).toBeInTheDocument();
     const buyNow = await screen.findAllByText(/Buy Now/);
     expect(buyNow.length).toEqual(16);
 
@@ -32,14 +32,14 @@ describe("buy now and regular click", () => {
     renderWithAppProvider(<AppRoutes />, {
       routerProps: {
         initialEntries: [
-          "/animals?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+          "/pets?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
         ],
       },
     });
 
     //assert
     // TODO: assumption - assertion is using default handler and testing the handler logic
-    expect(await screen.findByText(/Showing \d+ animals/)).toBeInTheDocument();
+    expect(await screen.findByText(/Showing \d+ pets/)).toBeInTheDocument();
     const buyNow = await screen.findAllByText(/Buy Now/);
     expect(buyNow.length).toEqual(16);
 
@@ -68,14 +68,14 @@ describe("buy now and regular click", () => {
     renderWithAppProvider(<AppRoutes />, {
       routerProps: {
         initialEntries: [
-          "/animals?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+          "/pets?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
         ],
       },
     });
 
     //assert
     // TODO: assumption - assertion is using default handler and testing the handler logic
-    expect(await screen.findByText(/Showing \d+ animals/)).toBeInTheDocument();
+    expect(await screen.findByText(/Showing \d+ pets/)).toBeInTheDocument();
     const header = await screen.findByText(/George, the Cat/i);
 
     // arrange (for prompt user to go view page)
@@ -91,7 +91,7 @@ describe("buy now and regular click", () => {
     renderWithAppProvider(<AppRoutes />, {
       routerProps: {
         initialEntries: [
-          "/animals?min_price=80&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+          "/pets?min_price=80&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
         ],
       },
     });
@@ -99,7 +99,7 @@ describe("buy now and regular click", () => {
     //assert
     // TODO: assumption - assertion is using default handler and testing the handler logic
     expect(await screen.findByText(/Min Price \$80\.00/)).toBeInTheDocument();
-    expect(await screen.findByText(/Showing \d+ animals/)).toBeInTheDocument();
+    expect(await screen.findByText(/Showing \d+ pets/)).toBeInTheDocument();
     const buyNow = await screen.findAllByText(/Buy Now/);
     expect(buyNow.length).toEqual(3);
   });
@@ -110,7 +110,7 @@ describe("buy now and regular click", () => {
     renderWithAppProvider(<AppRoutes />, {
       routerProps: {
         initialEntries: [
-          "/animals?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+          "/pets?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
         ],
       },
     });
@@ -128,7 +128,7 @@ describe("buy now and regular click", () => {
     renderWithAppProvider(<AppRoutes />, {
       routerProps: {
         initialEntries: [
-          "/animals?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+          "/pets?min_price=0&max_price=100&name=&type_id=b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
         ],
       },
     });
@@ -136,6 +136,6 @@ describe("buy now and regular click", () => {
     const search = screen.getByPlaceholderText(/Search/);
 
     await userEvent.type(search, "Lorena");
-    expect(await screen.findByText(/Showing 1 animals/)).toBeInTheDocument();
+    expect(await screen.findByText(/Showing 1 pets/)).toBeInTheDocument();
   });
 });

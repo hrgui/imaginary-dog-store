@@ -11,7 +11,7 @@ const AppRoutes = (props: Props) => {
   return (
     <Routes>
       <Route path="/" element={<PetTypesPage />} />
-      <Route path="/animals" element={<PetsPage />} />
+      <Route path="/pets" element={<PetsPage />} />
       <Route path="/collection" element={<CollectionPage />} />
       <Route path="/item/:id" element={<PetViewPage />} />
       <Route path="/checkout" element={<CheckoutPage />} />

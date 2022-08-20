@@ -2,13 +2,13 @@ import { ReactElement } from "react";
 import PetTypesGrid from "~/components/shop/PetTypesGrid";
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { getAnimalTypes } from "~/api-client/ApiClient";
+import { getPetTypes } from "~/api-client/ApiClient";
 import PageLoading from "~/components/app/PageLoading";
 
 export function PetTypesPage(): ReactElement {
   const { isLoading, data: items = [] } = useQuery<unknown, unknown, PetType[]>(
     ["items"],
-    getAnimalTypes
+    getPetTypes
   );
   const navigate = useNavigate();
 
