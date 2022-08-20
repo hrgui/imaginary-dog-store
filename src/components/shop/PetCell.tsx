@@ -13,6 +13,7 @@ type Props = {
 
 export function PetCell(props: Props): ReactElement {
   const { thumbnail, name, price, onView, isCollection = false, hasBuyNow = false } = props;
+  console.log(hasBuyNow);
 
   const item = props;
 

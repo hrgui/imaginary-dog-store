@@ -25,11 +25,11 @@ export function PetsGrid({
         {pets.map((pet) => {
           return (
             <PetCell
+              {...pet}
+              key={pet.id}
               isCollection={isCollection}
               hasBuyNow={hasBuyNow}
               onView={onItemView}
-              {...pet}
-              key={pet.id}
             />
           );
         })}
