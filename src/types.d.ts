@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 interface Pet {
   /** ID of the pet */
   id: string;
