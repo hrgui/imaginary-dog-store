@@ -1,12 +1,13 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 
 import { getCart, checkout } from "~/api-client/ApiClient";
-import Animal from "~/components/shop/AnimalCell";
+import PetCell from "~/components/shop/PetCell";
+import PageLoading from "~/components/app/PageLoading";
 
-function getTotal(items: Animal[]) {
+function getTotal(items: Pet[]) {
   return items
     .reduce((total, item) => {
       return +item.price + total;
@@ -15,8 +16,8 @@ function getTotal(items: Animal[]) {
 }
 
 export default function CheckoutPage(): ReactElement {
-  const { data, isLoading } = useQuery<Animal[]>(["cart"], getCart);
-  const mutation = useMutation<any, any, Animal[]>(checkout);
+  const { data, isLoading } = useQuery<Pet[]>(["cart"], getCart);
+  const mutation = useMutation<any, any, Pet[]>(checkout);
   const navigate = useNavigate();
 
   async function doPayNow() {
@@ -25,7 +26,7 @@ export default function CheckoutPage(): ReactElement {
   }
 
   if (isLoading) {
-    return <div>Loading cart</div>;
+    return <PageLoading />;
   }
 
   if (!data || !data.length) {
@@ -38,7 +39,7 @@ export default function CheckoutPage(): ReactElement {
       <button onClick={() => navigate(-1)}>go back</button>
 
       {data.map((item) => {
-        return <Animal key={item.id} item={item} />;
+        return <PetCell key={item.id} item={item} />;
       })}
 
       <h1>Total: ${getTotal(data)}</h1>

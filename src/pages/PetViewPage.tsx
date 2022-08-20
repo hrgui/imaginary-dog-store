@@ -5,20 +5,21 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import { getAnimal, addItemToCart } from "~/api-client/ApiClient";
 import Button from "~/components/ui/Button";
+import PageLoading from "~/components/app/PageLoading";
 
-export default function AnimalViewPage(): ReactElement {
+export function PetViewPage(): ReactElement {
   const { id } = useParams<{ id: string }>();
   const { isLoading, data: item } = useQuery<any>([`item${id}`], () => getAnimal(id as string));
-  const mutation = useMutation<any, any, Animal>(addItemToCart);
+  const mutation = useMutation<any, any, Pet>(addItemToCart);
   const navigate = useNavigate();
 
-  async function handleBuyItem(item: Animal) {
+  async function handleBuyItem(item: Pet) {
     await mutation.mutateAsync(item);
     return navigate("/checkout");
   }
 
   if (isLoading) {
-    return <div>Loading</div>;
+    return <PageLoading />;
   }
 
   if (!item) {
@@ -32,9 +33,13 @@ export default function AnimalViewPage(): ReactElement {
   return (
     <div>
       <h1>{item.name}</h1>
-      <img loading="lazy" src={item.large_img} alt={item.name} />
+      <div className="w-full min-h-[358px] h-full sm:w-[600px] sm:h-[600px] object-cover bg-gray-200">
+        <img loading="lazy" src={item.large_img} alt={item.name} />
+      </div>
       <h3>${item.price}</h3>
       <Button onClick={() => handleBuyItem(item)}>Buy Now</Button>
     </div>
   );
 }
+
+export default PetViewPage;

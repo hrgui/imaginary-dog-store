@@ -1,8 +1,8 @@
 import AppRoutes from "../AppRoutes";
-import renderWithAppProvider from "../test-utils/renderWithAppProvider";
+import renderWithAppProvider from "~/test-utils/renderWithAppProvider";
 import { screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { setMyCollection } from "../mocks/handlers";
+import { setMyCollection } from "~/mocks/handlers";
 
 describe("no collection", () => {
   it("should render no collection when there are no items", async () => {

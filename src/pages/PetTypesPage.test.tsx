@@ -1,10 +1,10 @@
 import { screen, waitForElementToBeRemoved } from "@testing-library/react";
-import renderWithAppProvider from "../test-utils/renderWithAppProvider";
-import AnimalTypesPage from "./AnimalTypesPage";
+import AppRoutes from "~/AppRoutes";
+import renderWithAppProvider from "~/test-utils/renderWithAppProvider";
 
 it("should render a shop with Cat and Dog", async () => {
   // act
-  renderWithAppProvider(<AnimalTypesPage />);
+  renderWithAppProvider(<AppRoutes />, { routerProps: { initialEntries: ["/"] } });
 
   // assert
   await waitForElementToBeRemoved(() => screen.queryByText(/Loading/));

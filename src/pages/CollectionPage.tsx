@@ -1,15 +1,15 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { useNavigate } from "react-router-dom";
 
 import { getCollection } from "~/api-client/ApiClient";
-import Animal from "../components/shop/AnimalCell";
+import PetCell from "~/components/shop/PetCell";
+import PageLoading from "~/components/app/PageLoading";
 
-export default function CollectionPage(): ReactElement {
+export function CollectionPage(): ReactElement {
   const { isLoading, data: items } = useQuery<any>(["collection"], getCollection);
 
   if (isLoading) {
-    return <div>Loading</div>;
+    return <PageLoading />;
   }
 
   if (!items || !items.length) {
@@ -20,10 +20,10 @@ export default function CollectionPage(): ReactElement {
     <div>
       <h1>Collection</h1>
       <div className="flex flex-wrap">
-        {items.map((d: Animal) => {
+        {items.map((d: Pet) => {
           return (
             <div key={d.id}>
-              <Animal isCollection item={d} />
+              <PetCell isCollection item={d} />
             </div>
           );
         })}
@@ -31,3 +31,5 @@ export default function CollectionPage(): ReactElement {
     </div>
   );
 }
+
+export default CollectionPage;

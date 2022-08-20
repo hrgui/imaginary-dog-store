@@ -1,4 +1,4 @@
-interface Animal {
+interface Pet {
   /** ID of the animal */
   id: string;
   /** Name of the Animal */
@@ -13,7 +13,7 @@ interface Animal {
   type_id: string;
 }
 
-interface AnimalType {
+interface PetType {
   /** ID of the animal type */
   id: string;
   /** Animal type name */
@@ -28,11 +28,11 @@ interface AnimalType {
   high?: { id: string; price: string };
 }
 
-interface AnimalSearchParams {
+interface PetSearchParams {
   type: "animal_type" | "animal";
 }
 
-interface AnimalSearchBody {
+interface PetSearchBody {
   type_id?: string;
   name?: string;
   min_price?: number;

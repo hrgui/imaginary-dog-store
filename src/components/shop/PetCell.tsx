@@ -6,22 +6,22 @@ import classnames from "classnames";
 import Button from "../ui/Button";
 
 interface Props {
-  item: Animal;
-  onView?: (item: Animal) => any;
+  item: Pet;
+  onView?: (item: Pet) => any;
   hasBuyNow?: boolean;
   isCollection?: boolean;
 }
 
-export default function AnimalCell({
+export function PetCell({
   item,
   onView,
   isCollection = false,
   hasBuyNow = false,
 }: Props): ReactElement {
   const navigate = useNavigate();
-  const mutation = useMutation<any, any, Animal>(addItemToCart);
+  const mutation = useMutation<any, any, Pet>(addItemToCart);
 
-  async function handleBuyItem(item: Animal) {
+  async function handleBuyItem(item: Pet) {
     await mutation.mutateAsync(item);
     return navigate("/checkout");
   }
@@ -51,3 +51,5 @@ export default function AnimalCell({
     </div>
   );
 }
+
+export default PetCell;

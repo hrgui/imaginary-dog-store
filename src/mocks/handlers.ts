@@ -3,8 +3,8 @@ import Fuse from "fuse.js";
 import _animals from "../fixtures/animals.json";
 import _animaTypes from "../fixtures/animal_types.json";
 
-let animals: Animal[] = _animals;
-let animalTypes: AnimalType[] = _animaTypes;
+let animals: Pet[] = _animals;
+let animalTypes: PetType[] = _animaTypes;
 let myCollection: any[] = [];
 let cart: any[] = [];
 
@@ -15,12 +15,12 @@ function sortAnimalsWithTypeDesc(type_id: string) {
   return allAnimalsWithType;
 }
 
-function findLowestPricedAnimal(animalType: AnimalType) {
+function findLowestPricedAnimal(animalType: PetType) {
   const allAnimalsWithType = sortAnimalsWithTypeDesc(animalType.id);
   return allAnimalsWithType[allAnimalsWithType.length - 1];
 }
 
-function findHighestPricedAnimal(animalType: AnimalType) {
+function findHighestPricedAnimal(animalType: PetType) {
   const allAnimalsWithType = sortAnimalsWithTypeDesc(animalType.id);
   return allAnimalsWithType[0];
 }
@@ -40,7 +40,7 @@ export const handlers = [
   }),
   rest.get(
     "https://example.pet.shop/api/search/:type",
-    (req: MockedRequest<any, AnimalSearchParams>, res, ctx) => {
+    (req: MockedRequest<any, PetSearchParams>, res, ctx) => {
       const { type } = req.params;
       if (type === "animal_type") {
         return res(ctx.json(animalTypes));
@@ -84,10 +84,10 @@ export const handlers = [
       return res(ctx.json(returnedAnimals));
     }
   ),
-  rest.get("https://example.pet.shop/api/cart", (req: MockedRequest<Animal>, res, ctx) => {
+  rest.get("https://example.pet.shop/api/cart", (req: MockedRequest<Pet>, res, ctx) => {
     return res(ctx.json(cart));
   }),
-  rest.post("https://example.pet.shop/api/cart", (req: MockedRequest<Animal>, res, ctx) => {
+  rest.post("https://example.pet.shop/api/cart", (req: MockedRequest<Pet>, res, ctx) => {
     const item = req.body;
 
     const isAlreadyACartItem = cart.filter((cartItem) => cartItem.id === item.id)[0];
@@ -103,7 +103,7 @@ export const handlers = [
     (req: MockedRequest<any, { itemId: string }>, res, ctx) => {
       const { itemId } = req.params;
 
-      const item: Animal = animals.filter((item: Animal) => item.id + "" === itemId)?.[0];
+      const item: Pet = animals.filter((item: Pet) => item.id + "" === itemId)?.[0];
 
       if (!item) {
         return res(ctx.status(404));
@@ -115,7 +115,7 @@ export const handlers = [
   rest.get("https://example.pet.shop/api/collection", (req, res, ctx) => {
     return res(ctx.json(myCollection));
   }),
-  rest.post("https://example.pet.shop/api/checkout", (req: MockedRequest<Animal[]>, res, ctx) => {
+  rest.post("https://example.pet.shop/api/checkout", (req: MockedRequest<Pet[]>, res, ctx) => {
     const body = req.body;
 
     for (const animal of body) {
@@ -146,6 +146,6 @@ export function reset() {
   myCollection = [];
 }
 
-export function setMyCollection(collection: Animal[]) {
+export function setMyCollection(collection: Pet[]) {
   myCollection = collection;
 }

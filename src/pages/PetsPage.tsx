@@ -3,14 +3,14 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 
 import SearchFilters from "~/components/shop/SearchFilters";
-import ItemsGrid from "~/components/shop/AnimalsGrid";
+import ItemsGrid from "~/components/shop/PetsGrid";
 import { getAnimals } from "~/api-client/ApiClient";
 
 interface Props {
   filters?: PetFilters;
 }
 
-export default function AnimalsPage({ filters: defaultFilters, ...props }: Props): ReactElement {
+export function PetsPage({ filters: defaultFilters, ...props }: Props): ReactElement {
   const [searchParams, setSearchParams] = useSearchParams();
   const [filters, setFilters] = React.useState<PetFilters>(
     defaultFilters || {
@@ -45,3 +45,5 @@ export default function AnimalsPage({ filters: defaultFilters, ...props }: Props
     </div>
   );
 }
+
+export default PetsPage;

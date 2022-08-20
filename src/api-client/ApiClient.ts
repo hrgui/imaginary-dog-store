@@ -19,7 +19,7 @@ export async function getCollection() {
   return res.json();
 }
 
-export async function checkout(cart: Animal[]) {
+export async function checkout(cart: Pet[]) {
   const res = await fetch(`https://example.pet.shop/api/checkout`, {
     method: "POST",
     headers: {
@@ -31,7 +31,7 @@ export async function checkout(cart: Animal[]) {
   return res.json();
 }
 
-export async function addItemToCart(data: Animal) {
+export async function addItemToCart(data: Pet) {
   const res = await fetch(`https://example.pet.shop/api/cart`, {
     method: "POST",
     headers: {

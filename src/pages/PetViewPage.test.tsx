@@ -1,5 +1,5 @@
-import AppRoutes from "../AppRoutes";
-import renderWithAppProvider from "../test-utils/renderWithAppProvider";
+import AppRoutes from "~/AppRoutes";
+import renderWithAppProvider from "~/test-utils/renderWithAppProvider";
 import { screen } from "@testing-library/react";
 
 describe("item not found", () => {
