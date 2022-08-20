@@ -9,9 +9,7 @@ async function bootstrap() {
   await worker.start({
     onUnhandledRequest: "error",
     serviceWorker: {
-      url: import.meta.env.PROD
-        ? window.location.pathname + "/mockServiceWorker.js"
-        : "/mockServiceWorker.js",
+      url: "/mockServiceWorker.js",
     },
   });
   ReactDOM.render(

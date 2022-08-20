@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import AppProvider from "./AppProvider";
 import AppRoutes from "./AppRoutes";
 
-function App({ basename = "/imaginary-pet-shop/" }) {
+function App() {
   return (
-    <Router basename={basename}>
+    <Router>
       <AppProvider>
         <div>
           <Link className="font-medium text-blue-600 dark:text-blue-500 hover:underline" to="/">

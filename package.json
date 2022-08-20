@@ -2,7 +2,6 @@
   "name": "@hrgui/imaginary-pet-shop",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://www.harmanradix.com/imaginary-pet-shop",
   "dependencies": {},
   "scripts": {
     "generate-fixtures": "node src/fixtures/generate-fixtures.js",
