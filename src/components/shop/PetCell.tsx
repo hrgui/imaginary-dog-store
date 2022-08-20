@@ -5,19 +5,17 @@ import { addItemToCart } from "~/api-client/ApiClient";
 import classnames from "classnames";
 import Button from "../ui/Button";
 
-interface Props {
-  item: Pet;
+type Props = {
   onView?: (item: Pet) => any;
   hasBuyNow?: boolean;
   isCollection?: boolean;
-}
+} & Pet;
 
-export function PetCell({
-  item,
-  onView,
-  isCollection = false,
-  hasBuyNow = false,
-}: Props): ReactElement {
+export function PetCell(props: Props): ReactElement {
+  const { thumbnail, name, price, onView, isCollection = false, hasBuyNow = false } = props;
+
+  const item = props;
+
   const navigate = useNavigate();
   const mutation = useMutation<any, any, Pet>(addItemToCart);
 
@@ -29,23 +27,18 @@ export function PetCell({
   return (
     <div
       className={classnames("flex flex-col w-full sm:w-auto", {
-        ["cursor-pointer"]: isCollection,
+        ["cursor-pointer"]: !isCollection,
       })}
     >
       <button
         onClick={() => !isCollection && onView?.(item)}
         className={classnames("text-left", { ["cursor-pointer"]: isCollection })}
       >
-        <h2 className="text-2xl font-semibold">{item.name}</h2>
-        <div className="w-full sm:w-[300px] h-[300px] bg-gray-200">
-          <img
-            loading="lazy"
-            src={item.thumbnail}
-            className="w-full sm:w-[300px] h-[300px] object-cover"
-            alt={item.name}
-          />
+        <h2 className="text-2xl font-semibold">{name}</h2>
+        <div className="w-full bg-gray-200">
+          <img loading="lazy" src={thumbnail} className="w-full object-cover" alt={name} />
         </div>
-        {!isCollection && <h3>${item.price}</h3>}
+        {!isCollection && <h3>${price}</h3>}
       </button>
       {hasBuyNow && <Button onClick={() => handleBuyItem(item)}>Buy Now</Button>}
     </div>

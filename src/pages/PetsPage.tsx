@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 
 import SearchFilters from "~/components/shop/SearchFilters";
-import ItemsGrid from "~/components/shop/PetsGrid";
+import PetsGrid from "~/components/shop/PetsGrid";
 import { getPets } from "~/api-client/ApiClient";
 
 interface Props {
@@ -36,7 +36,7 @@ export function PetsPage({ filters: defaultFilters, ...props }: Props): ReactEle
         className="w-full sm:w-[25%]"
         onFilterChange={(filters) => setFilters(filters)}
       />
-      <ItemsGrid
+      <PetsGrid
         isLoading={isLoading}
         pets={items}
         className="w-full sm:w-[75%] sm:ml-[8px]"

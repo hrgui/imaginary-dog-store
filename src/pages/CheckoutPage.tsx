@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { getCart, checkout } from "~/api-client/ApiClient";
 import PetCell from "~/components/shop/PetCell";
 import PageLoading from "~/components/app/PageLoading";
+import PetsGrid from "~/components/shop/PetsGrid";
 
 function getTotal(items: Pet[]) {
   return items
@@ -38,9 +39,7 @@ export default function CheckoutPage(): ReactElement {
       <h1 className="text-3xl">Checkout</h1>
       <button onClick={() => navigate(-1)}>go back</button>
 
-      {data.map((item) => {
-        return <PetCell key={item.id} item={item} />;
-      })}
+      <PetsGrid pets={data} hasBuyNow={false} />
 
       <h1>Total: ${getTotal(data)}</h1>
       <button
