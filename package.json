@@ -1,0 +1,64 @@
+{
+  "name": "@hrgui/imaginary-pet-shop",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://www.harmanradix.com/imaginary-pet-shop",
+  "dependencies": {},
+  "scripts": {
+    "generate-fixtures": "node src/fixtures/generate-fixtures.js",
+    "start": "yarn dev",
+    "dev": "vite dev --port 3000",
+    "test": "vitest",
+    "build": "vite build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@tanstack/react-query": "^4.2.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router": "^5.1.8",
+    "@types/react-router-dom": "^5.1.6",
+    "@vitejs/plugin-react": "^2.0.1",
+    "@vitest/coverage-c8": "^0.22.1",
+    "autoprefixer": "^10.4.8",
+    "c8": "^7.12.0",
+    "classnames": "^2.3.1",
+    "cross-fetch": "^3.1.5",
+    "faker": "^5.1.0",
+    "fuse.js": "^6.4.4",
+    "happy-dom": "^6.0.4",
+    "jsdom": "^20.0.0",
+    "msw": "^0.22.3",
+    "postcss": "^8.4.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "tailwind-merge": "^1.5.1",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.0.3",
+    "vite": "^3.0.9",
+    "vitest": "^0.22.1",
+    "web-vitals": "^0.2.4"
+  }
+}

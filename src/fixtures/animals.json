@@ -1,0 +1,642 @@
+[
+  {
+    "id": "ab0a9413-e2ad-412a-9eca-13fedfd7d912",
+    "name": "George, the Cat",
+    "gender": "male",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=1",
+    "large_img": "https://placekitten.com/600/600?image=1",
+    "price": "69.00",
+    "description": "Ut est voluptas occaecati. Et sunt eligendi in corrupti voluptatem consequatur rerum alias. Voluptatem iusto consequuntur ut omnis et vero. Aliquam culpa ad. Rerum blanditiis et nisi odit qui fugit alias totam quaerat.\n \rQui tempore quibusdam dolorem assumenda maiores id quidem aut aut. Quaerat ut sit animi ab dignissimos unde. Voluptatum id occaecati consequatur cum aspernatur perspiciatis dolorum cum qui.\n \rEt aut nesciunt repellat illum consequuntur placeat et. Nihil quo sit nostrum est consequatur et. Numquam adipisci vel vel ducimus velit laborum adipisci nihil ut. Magni rerum hic cupiditate possimus. Et voluptatibus id beatae consequatur excepturi atque aut a."
+  },
+  {
+    "id": "037ce497-65ab-4a58-b112-e14333740788",
+    "name": "Jane, the Cat",
+    "gender": "female",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=2",
+    "large_img": "https://placekitten.com/600/600?image=2",
+    "price": "16.00",
+    "description": "Eum molestiae possimus libero autem dolores in. Perferendis ut eius. Expedita quia ex aut dolor est. Non quaerat et necessitatibus eius sapiente. Porro quia nulla voluptas mollitia cumque pariatur quia dolores ut. Repellendus enim quas voluptatem sed occaecati repudiandae cumque commodi.\n \rNisi veniam assumenda. Cumque ab iusto doloremque dolorem tempore eos saepe dignissimos sint. Modi sit quod qui voluptatibus aspernatur officiis suscipit rem magnam.\n \rNon officia enim similique voluptas eos. Illum cum soluta aliquid porro nihil asperiores corrupti asperiores dolor. Vitae et molestiae voluptates."
+  },
+  {
+    "id": "1748d3e1-97f5-4deb-93bf-65341914d0da",
+    "name": "Violet, the Cat",
+    "gender": "female",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=3",
+    "large_img": "https://placekitten.com/600/600?image=3",
+    "price": "66.00",
+    "description": "Nihil odio perferendis dolores officia eius quaerat. Eum aut omnis iste. Et natus quisquam voluptatem dolor explicabo sint porro. Et et voluptatem inventore repellat ut.\n \rConsequatur rerum adipisci aut reiciendis perferendis. Natus nesciunt dolorem aut sit et atque. Quia aut id. Suscipit et quis consequatur quos vel assumenda rerum. Perspiciatis consectetur placeat quae placeat fugiat perspiciatis iste iusto. Nemo rerum nemo optio ipsam qui vero quisquam occaecati.\n \rEveniet sed aliquam accusantium. Ut eius sit fugit. Dolores autem vel velit itaque minus reprehenderit consequuntur impedit. Corrupti sint facere aperiam beatae natus aperiam vitae illo. Aut illo dolorum voluptate. Aut et in quod consequatur non eligendi ullam laborum suscipit."
+  },
+  {
+    "id": "913a14d8-0845-4354-a6c0-3fc1a911a775",
+    "name": "Rosalie, the Cat",
+    "gender": "female",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=4",
+    "large_img": "https://placekitten.com/600/600?image=4",
+    "price": "46.00",
+    "description": "Illo ut cupiditate itaque nesciunt explicabo ut vel. Quae quis ut deserunt ut. Nemo suscipit quis illo.\n \rOdio quisquam est ipsam inventore omnis molestias consectetur vel tempora. Laborum dicta officiis magnam. Nulla quae consectetur qui perspiciatis. Itaque velit est enim qui sunt cumque corporis neque facere. Est sequi culpa nobis sed non.\n \rVel incidunt quia. Blanditiis fugit molestias. Est modi iure natus dolorem."
+  },
+  {
+    "id": "1316492a-c2ff-422b-82a5-8845aca484bf",
+    "name": "Brooke, the Cat",
+    "gender": "female",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=5",
+    "large_img": "https://placekitten.com/600/600?image=5",
+    "price": "61.00",
+    "description": "Natus et maxime qui dolorem accusamus et veritatis. Quasi consequuntur asperiores. Maxime eum ut rerum ut dolorum sed voluptas hic consequatur.\n \rDebitis corporis debitis voluptas magnam beatae. Id enim natus id architecto similique nulla sit assumenda. Aliquid totam minus voluptatem consequuntur est quidem voluptatem consectetur. Mollitia amet id voluptatem velit. Non ut rerum dolores cum perspiciatis nemo dolorem. Esse eligendi nesciunt ut commodi et sint voluptas aut.\n \rEt repellendus fugit dolorem id. Esse doloremque quam reprehenderit. Ab officia consequatur veniam. Ullam dicta sequi eum. Explicabo deleniti minus excepturi quibusdam necessitatibus."
+  },
+  {
+    "id": "a572019e-7073-44dd-aa44-d59af0a4aaca",
+    "name": "Lorena, the Cat",
+    "gender": "female",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=6",
+    "large_img": "https://placekitten.com/600/600?image=6",
+    "price": "33.00",
+    "description": "Et alias distinctio quas non recusandae voluptatem. Sed et et. Qui quia possimus laudantium. Quis corporis facilis autem aut. Quia qui repudiandae dolores.\n \rVoluptatem vel ut officiis iusto consequatur et voluptatem itaque rerum. Voluptas qui eos vitae. Rerum et dignissimos molestias corrupti reiciendis iusto modi numquam.\n \rDoloribus eligendi et nisi et distinctio natus. Aut facilis nihil perspiciatis dicta necessitatibus reiciendis. Exercitationem quia molestiae necessitatibus."
+  },
+  {
+    "id": "97fa2ec6-bd14-4d3f-bb78-edf3325df0a2",
+    "name": "Lila, the Cat",
+    "gender": "female",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=7",
+    "large_img": "https://placekitten.com/600/600?image=7",
+    "price": "60.00",
+    "description": "Atque ratione ab aut atque. Aut non modi nobis. Labore saepe voluptatem laborum nesciunt adipisci et.\n \rCupiditate laboriosam distinctio impedit aut iusto expedita beatae molestiae. Excepturi aliquid iste. Aperiam rerum explicabo optio culpa velit. Rem qui neque veritatis ipsum fuga. Ipsam culpa et animi eligendi.\n \rEst voluptatem veritatis et ullam et. Illo ab at assumenda aliquam. Eum natus ipsa repudiandae. A consequatur fuga in molestiae aut asperiores quaerat."
+  },
+  {
+    "id": "a2a60ef4-7837-4c34-b120-bed957361d06",
+    "name": "Shelia, the Cat",
+    "gender": "female",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=8",
+    "large_img": "https://placekitten.com/600/600?image=8",
+    "price": "18.00",
+    "description": "Rerum aut officia nemo quod maxime nihil maiores iusto voluptas. Dolorum quasi veniam eum commodi sit. Et commodi quaerat consequuntur vitae.\n \rAliquid perferendis reprehenderit repudiandae et et excepturi neque. Necessitatibus id ad aut provident quae vero at maxime. Aut maxime ut blanditiis voluptas. Sed quas temporibus nihil explicabo illo cumque dignissimos odit blanditiis.\n \rUt tenetur perspiciatis. Consequatur ad ut quibusdam molestiae nesciunt neque laborum. Aut fugiat autem corporis qui voluptatem odio amet. Aut nemo est quas voluptatem qui vel est quis."
+  },
+  {
+    "id": "81e0f8b6-b2d2-4f38-b17d-23ffa6ea9551",
+    "name": "Beatrice, the Cat",
+    "gender": "female",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=9",
+    "large_img": "https://placekitten.com/600/600?image=9",
+    "price": "64.00",
+    "description": "Dolores aperiam et. Dolorem et et omnis. Accusamus nulla quas eaque sapiente adipisci ut delectus temporibus. Corporis sed maxime ad ratione voluptatem iste porro.\n \rNumquam recusandae quia facere nihil harum. Non et enim et quia. Rem id eligendi adipisci cumque provident voluptatem eveniet est. Praesentium quasi id. Laboriosam omnis qui consequatur exercitationem. Aliquam nemo id.\n \rUt unde magni voluptatem laudantium ex. Minima non amet debitis blanditiis minus atque consectetur rerum. Ut delectus et. Dicta iusto expedita possimus adipisci eum et maxime. Veniam voluptas ullam ad saepe laudantium quis corrupti voluptatibus. Excepturi nihil et deleniti labore deleniti assumenda est."
+  },
+  {
+    "id": "5e99aae8-3efb-42d5-87d3-2b1eb31916c0",
+    "name": "Melanie, the Cat",
+    "gender": "female",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=10",
+    "large_img": "https://placekitten.com/600/600?image=10",
+    "price": "65.00",
+    "description": "Ex harum veritatis cumque commodi sed quis voluptatem. Nulla magni illum provident sed nobis quis id. Ut ut dolor adipisci aut veritatis eum voluptates. Fugit ducimus velit fuga cupiditate. Dolorum consequatur explicabo voluptatem accusantium reprehenderit tempora natus ea.\n \rMolestiae sint corporis et. Quia qui nulla fuga et. Consequatur porro est aut iste et quis nihil. Magnam sed sit deserunt. Reiciendis dolores molestiae qui dolor. Facere aut eaque maiores modi dolorem.\n \rAutem necessitatibus quidem autem. Sit consequatur laudantium similique. Incidunt quibusdam ut consectetur ad. A minus placeat tenetur modi. Asperiores aliquid non laudantium dolore quia neque."
+  },
+  {
+    "id": "9d496797-6e96-442c-8ccd-a7d7edaf9ec5",
+    "name": "Lester, the Cat",
+    "gender": "male",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=11",
+    "large_img": "https://placekitten.com/600/600?image=11",
+    "price": "83.00",
+    "description": "Praesentium ipsum soluta. Molestiae autem rerum eaque. Voluptas non nemo nesciunt nihil id. Voluptas aut enim saepe molestias quos amet similique quia dolor. Omnis molestias molestias qui repellat molestiae.\n \rCorrupti soluta est corporis molestias. Amet neque sed. Illo aut itaque. Quos et est maiores voluptatum tenetur ab qui accusamus illum. Doloremque ratione aut tenetur. Et hic nostrum quae dolorum numquam quod qui.\n \rHarum esse iure minima sequi nemo autem libero. Modi et laudantium tempore aut aliquid sint. Dolor corporis rerum. Sint voluptatem et quam. Voluptatem cumque veniam dolor minus doloremque. Quis dolorem et rerum consequatur et aut."
+  },
+  {
+    "id": "b6b7997d-7c46-4d6a-a49f-af92e96aa817",
+    "name": "Allan, the Cat",
+    "gender": "male",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=12",
+    "large_img": "https://placekitten.com/600/600?image=12",
+    "price": "80.00",
+    "description": "Itaque consequatur aspernatur velit. Quae qui repellendus voluptates iusto rem corrupti quidem dolorum. Sint provident sed ut aut unde nihil cupiditate.\n \rReiciendis et praesentium asperiores repellendus rerum voluptatum laboriosam. Ut quam harum rem accusamus. Perspiciatis ipsam blanditiis. Excepturi ut quam minus beatae adipisci et deserunt. Omnis a molestias repellat odio deserunt commodi nihil.\n \rAdipisci ea est rerum eligendi. Debitis quidem nostrum perspiciatis consequatur explicabo laudantium ullam et. Sapiente illo repudiandae sunt soluta asperiores similique. Et nihil autem omnis sint."
+  },
+  {
+    "id": "637914f9-f1d3-453e-8ff5-8a0ebec85b88",
+    "name": "Perry, the Cat",
+    "gender": "male",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=13",
+    "large_img": "https://placekitten.com/600/600?image=13",
+    "price": "14.00",
+    "description": "Quibusdam vel autem molestias provident itaque eum aperiam laudantium. Quis voluptatem iste occaecati eos eos impedit delectus. Impedit in quod dolores ut voluptates. Ducimus velit nam. Quia voluptatem eos soluta at corrupti sed. Eaque inventore non ut non repudiandae blanditiis est.\n \rQuis accusantium at mollitia officiis accusamus et placeat quia consequatur. Voluptatem pariatur quibusdam quod sed sapiente corporis omnis. Animi quia nemo unde voluptatum adipisci. Modi sint enim dolorem eum labore atque velit. Adipisci porro ipsam.\n \rAlias eum itaque. Perspiciatis ipsum voluptas. Non ipsa minima sit libero velit nisi rerum aliquid."
+  },
+  {
+    "id": "4731aef7-4cc5-497d-9c26-9091ca26777b",
+    "name": "Everett, the Cat",
+    "gender": "male",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=14",
+    "large_img": "https://placekitten.com/600/600?image=14",
+    "price": "81.00",
+    "description": "Eum nam sint qui inventore beatae accusantium illo itaque saepe. Non et aut sequi itaque minus est sit perferendis. Libero modi et aut dolore voluptatem quia repellendus. Exercitationem ut est enim ut eos et sit est. Molestias quia non praesentium. Reprehenderit est nihil aut.\n \rError nesciunt explicabo. Magni asperiores ex dolores. Molestias quo illum sit tempore harum beatae quia. Itaque repellat eos mollitia consequatur incidunt. Sit aut culpa. Qui illo molestias molestiae qui.\n \rEsse corrupti repudiandae ea sed eum quo et. Vero qui sint porro aut. Eum eum eum rerum repudiandae quia blanditiis magnam consequatur."
+  },
+  {
+    "id": "de193038-6fce-40bb-9f7c-3731ddbd36d6",
+    "name": "Darrel, the Cat",
+    "gender": "male",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=15",
+    "large_img": "https://placekitten.com/600/600?image=15",
+    "price": "31.00",
+    "description": "Occaecati voluptatem consequatur recusandae ipsum mollitia facere adipisci soluta ut. Ut nihil explicabo dicta et omnis sit expedita velit et. Cupiditate aperiam nam quibusdam. Est sapiente ea aut. Minima sit eaque quibusdam magnam neque et amet et.\n \rQuia velit minus. Dolores quidem et rerum est repellendus molestiae ut incidunt. Ipsam sequi quae doloremque. Delectus libero sunt. Autem qui rerum voluptas.\n \rAt eum quisquam nihil eligendi. Molestiae quisquam ut dignissimos sapiente non et cumque. Ea reiciendis et aut. Ad repudiandae exercitationem sint ut dolores voluptatum. Non inventore distinctio in aut aut nobis eligendi."
+  },
+  {
+    "id": "c26f4ffe-6cdf-4b5d-93c2-7fba841b66af",
+    "name": "Robin, the Cat",
+    "gender": "male",
+    "type_id": "b77dbbdc-f8a6-48c3-a0fb-18dce43ae359",
+    "thumbnail": "https://placekitten.com/300/300?image=16",
+    "large_img": "https://placekitten.com/600/600?image=16",
+    "price": "67.00",
+    "description": "Quibusdam ullam illo ipsam alias et laboriosam vitae. Quae debitis recusandae non consequatur placeat cupiditate. Sed voluptatum maiores iusto totam pariatur.\n \rAb soluta sed voluptate qui id numquam voluptas ut. Aperiam enim voluptatem aperiam. Suscipit eaque at rerum minima suscipit. Modi molestiae natus vel. Ipsum soluta nostrum laboriosam.\n \rNeque fugiat rem molestiae. Voluptates eum ut enim quia nam hic eveniet et voluptates. Suscipit iste tempora et sint sit aperiam animi sequi. Veritatis voluptas reiciendis saepe ipsum consequatur voluptatem nobis."
+  },
+  {
+    "id": "7fda0bd1-f589-4a2e-8665-6b44ed775bc2",
+    "name": "Mercedes, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=1",
+    "large_img": "https://placedog.net/600/600?id=1",
+    "price": "11.00",
+    "description": "Iure magni soluta fugit perferendis animi ut porro atque. Ipsam hic sed ipsa nam excepturi omnis minus quidem voluptas. Hic sint maxime rerum vel voluptates qui. Aliquid quis accusamus quia quibusdam est eum.\n \rMinima vitae eos. Ipsa perspiciatis hic laudantium at aut expedita magni modi quae. Quos corporis blanditiis. Quis reiciendis reprehenderit autem accusantium ut eligendi eius.\n \rLaboriosam rerum dolorem laborum. Rerum et aut omnis quia. Rerum perferendis qui labore. Dolore dolor repudiandae modi veniam adipisci nobis."
+  },
+  {
+    "id": "a0cec053-710c-44f8-ac0e-fab52f8e0ffa",
+    "name": "Rosie, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=2",
+    "large_img": "https://placedog.net/600/600?id=2",
+    "price": "8.00",
+    "description": "Adipisci voluptas magni voluptates est. Doloremque accusamus rerum quis optio a in eligendi voluptatem iure. Reprehenderit quaerat et aperiam. Cumque vel quia eum omnis qui dolorem exercitationem aut.\n \rOmnis quam ad culpa tempore rerum nulla assumenda dolores. Alias beatae distinctio iure omnis dolores culpa exercitationem iure cupiditate. Tempore est voluptates nesciunt laborum rerum similique sit. Doloremque qui sed alias odio et. Reiciendis adipisci ut suscipit qui optio ut eveniet ut suscipit.\n \rVelit corrupti accusamus ipsum numquam nostrum dolor. Enim sed ut ullam. Voluptates enim quia voluptatem autem quidem optio amet."
+  },
+  {
+    "id": "fb1fb208-ba8c-4e60-9596-1b6973d244ba",
+    "name": "Elias, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=3",
+    "large_img": "https://placedog.net/600/600?id=3",
+    "price": "26.00",
+    "description": "Quae aut mollitia est est sint id impedit. Commodi eos sint. Ipsum doloremque est voluptates. Optio explicabo aut soluta vitae tenetur. Ducimus blanditiis exercitationem nihil est ut magni nisi. Voluptatem ut necessitatibus est in voluptatem dolorum.\n \rOfficia magnam alias omnis sequi consectetur. Ipsam expedita eum deserunt quia vel soluta excepturi. Est accusantium deleniti sed et. Molestiae minima in eaque adipisci rerum ab quo eum facere. Laborum necessitatibus magni.\n \rRerum architecto a in. Quaerat impedit est non et quis tempore quasi est. Dolorem deleniti quod et et quas sit exercitationem ex error. Eveniet quaerat ipsam quis cupiditate modi nobis corporis sint ut. Excepturi corrupti iusto qui libero omnis eaque voluptate non fuga. Sunt quis et quaerat debitis quo."
+  },
+  {
+    "id": "cf55f252-6a91-4bbd-8da3-25b2514e8d3b",
+    "name": "Rudy, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=4",
+    "large_img": "https://placedog.net/600/600?id=4",
+    "price": "9.00",
+    "description": "Vitae dolorem explicabo ut esse. Velit pariatur veniam. Dicta autem provident. Illo facere molestias non alias assumenda dolor qui. Dolorem placeat necessitatibus iusto eos rerum error consectetur. Quasi commodi corporis ratione exercitationem magnam autem dolores.\n \rEst iusto dolor unde culpa consequatur. Nostrum commodi culpa. Inventore accusantium qui consequatur incidunt non. Necessitatibus ratione odit quam cum eligendi in. Inventore omnis totam error illum voluptatem minima optio. Corporis eos eos.\n \rPerspiciatis numquam minus. Doloribus similique aut. Iure officiis praesentium tenetur nisi inventore rerum repellat. Nam sint autem libero. Ut in non. Eaque deleniti enim voluptates nostrum quasi assumenda possimus cum dolores."
+  },
+  {
+    "id": "7a5e8d59-d58e-4a6b-8b59-88c599b886c1",
+    "name": "Jeffery, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=5",
+    "large_img": "https://placedog.net/600/600?id=5",
+    "price": "31.00",
+    "description": "Architecto officia tempore perferendis quo necessitatibus impedit voluptas illum. Exercitationem eum ut velit quisquam. Quia animi excepturi illum sapiente libero est qui.\n \rBeatae quisquam quos architecto perspiciatis aut non illum maiores aperiam. Commodi itaque ut. Sunt rerum ratione non. Eum vel alias sed officia quasi veniam fugiat occaecati qui. Ut accusamus illum.\n \rOptio quos officia quia. Consequatur dolores blanditiis natus vitae voluptatem qui ab reprehenderit repellat. Ut autem quasi nesciunt et natus aspernatur. Et voluptas id velit."
+  },
+  {
+    "id": "909c05a5-e5b1-44d2-946d-e7b457d1053d",
+    "name": "Juan, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=6",
+    "large_img": "https://placedog.net/600/600?id=6",
+    "price": "56.00",
+    "description": "Nemo perferendis ut sint et quas nam rerum deserunt eligendi. Optio facilis animi iure nulla optio harum officia pariatur explicabo. Nihil autem quas deleniti blanditiis alias. Minus corporis voluptatem inventore officiis. Cumque quo velit possimus quae quasi.\n \rAb officia praesentium aliquam voluptatem et voluptatum dolorem dolorum. Voluptas neque rem adipisci inventore quos fugit rerum eum. Velit dolorem quibusdam doloremque et voluptates consequatur. Et repudiandae facere aliquid. Voluptates non quae qui non laudantium tempore.\n \rEst ea laudantium expedita esse sint autem eos dolorum. Quam odio ut amet. Fugiat sed et et nihil ad architecto qui labore sed."
+  },
+  {
+    "id": "a318f386-36a5-470a-8f61-cf20fa4db09e",
+    "name": "Earl, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=7",
+    "large_img": "https://placedog.net/600/600?id=7",
+    "price": "16.00",
+    "description": "Ut ea accusantium magnam doloremque maiores quam. Consequatur rerum et ex provident cum iusto quasi. Non ab animi nesciunt odit repellat recusandae ea. Praesentium aperiam nobis odio aut tempore possimus quia autem. Est incidunt doloremque itaque excepturi vel. Incidunt maiores pariatur.\n \rSed labore sequi nemo consequatur laboriosam nihil. Excepturi eius nihil enim qui consequatur. Cum debitis nihil praesentium. Quam incidunt est voluptatem ut nobis culpa non est officia.\n \rQui ad asperiores minima beatae ab sunt eum repudiandae. Totam ut dolore natus sapiente. Repudiandae voluptates aspernatur ex est accusamus ab. Optio minus dolor cum exercitationem. Quisquam voluptatem eligendi culpa laudantium harum aliquid quo."
+  },
+  {
+    "id": "9a507813-4977-413b-be6f-c69b9c9176e7",
+    "name": "Bob, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=8",
+    "large_img": "https://placedog.net/600/600?id=8",
+    "price": "40.00",
+    "description": "Nulla tempore eveniet culpa ad maxime voluptatum repellendus voluptas. Aut quas dolor est laudantium qui at a. Sit aut est.\n \rAutem minima cum quam quidem vero ipsam necessitatibus fugit aliquam. Pariatur modi consequuntur. Odit quibusdam dolores et sapiente nostrum sit modi commodi. Corrupti magni aut. Ex ut quaerat magni ab voluptas.\n \rVeritatis qui sit eius ut. Quia quibusdam tempora. Repellendus voluptatem deserunt repellat natus incidunt illum facilis eius. Molestiae dolores nulla quibusdam praesentium quia libero earum sed aut."
+  },
+  {
+    "id": "847b7aaa-29a9-4880-abfc-8597b4082c59",
+    "name": "Brad, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=9",
+    "large_img": "https://placedog.net/600/600?id=9",
+    "price": "77.00",
+    "description": "Ex accusantium rerum ut est. Quis commodi quis aut autem dolorem et occaecati facere at. Fugiat minus adipisci magnam voluptatem autem.\n \rUt quia sit non natus minus eum ullam. Dolorem asperiores cupiditate debitis. Et praesentium ea a ea sed.\n \rQuasi ab debitis sint quas et et illo qui. Omnis eveniet sunt veniam voluptas fugit quaerat. Ad fugit numquam impedit voluptas dolores cupiditate. Maiores hic minima quis corporis odit quaerat. Deleniti beatae perferendis maxime qui sit rem."
+  },
+  {
+    "id": "ad919216-9d63-4537-8162-07c8c2f09e71",
+    "name": "Ed, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=10",
+    "large_img": "https://placedog.net/600/600?id=10",
+    "price": "11.00",
+    "description": "Debitis est nulla et reprehenderit ab quibusdam sunt reprehenderit. Rem ut nihil sit repellat mollitia expedita. Et vero est ducimus dolor minus ab quia.\n \rQuo illo beatae id voluptate facilis molestias. Debitis dolor eos et vel rerum omnis ipsam qui. Sint ut qui id ratione natus.\n \rUt voluptatum consequatur molestiae odit et. Repudiandae sapiente est nihil voluptatem quidem. Ut est aut temporibus consequatur ducimus corrupti velit placeat ea. Excepturi eos eos et autem voluptatibus aut qui. Nemo pariatur esse ut aut est. Unde tenetur totam enim qui repellendus."
+  },
+  {
+    "id": "fe708061-6347-434d-a346-45c57f066817",
+    "name": "Sara, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=11",
+    "large_img": "https://placedog.net/600/600?id=11",
+    "price": "50.00",
+    "description": "Accusamus eum sunt aspernatur commodi. Ea animi modi debitis natus minima consequatur similique unde aspernatur. Quod et numquam architecto laudantium excepturi.\n \rMinus vero corrupti vitae est tempore. Sed rerum quia harum provident beatae similique. Dolores aut nemo totam odit ut eum accusamus alias. Et excepturi quos eaque nisi aliquam quia nihil repudiandae. Ea sit doloremque doloremque est quos quis nulla.\n \rQui porro tempore accusantium labore et sint aut sit non. Deserunt rem quo natus qui consequuntur aut. Cupiditate in et."
+  },
+  {
+    "id": "3ad6f275-9580-4678-8557-d87a2722c7a0",
+    "name": "Erik, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=12",
+    "large_img": "https://placedog.net/600/600?id=12",
+    "price": "53.00",
+    "description": "Fugit distinctio quo optio ullam dolore neque. Rerum atque aliquid. Consequatur nihil et itaque similique tempora.\n \rVoluptatem magnam maiores et ea ullam quia aperiam. Consectetur pariatur sit vel eius. Vitae culpa aut commodi alias.\n \rUt est rem sint molestias in. Aspernatur similique recusandae sunt. Reiciendis ipsa omnis rerum aut natus deserunt earum nostrum. In est laboriosam. Dolorem voluptas possimus ut. Iure perferendis repellat."
+  },
+  {
+    "id": "190c2146-15aa-4023-a443-27032dccccc7",
+    "name": "Ted, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=13",
+    "large_img": "https://placedog.net/600/600?id=13",
+    "price": "8.00",
+    "description": "Tempore consequatur voluptatem omnis corporis quod. In deserunt exercitationem dolor ratione nostrum quia dolore. Odit dolorem sint adipisci nihil dolor.\n \rEius necessitatibus rerum aut. Libero tempora voluptatem nam eos eaque dolorem aspernatur numquam excepturi. Atque accusamus aut aut exercitationem at eius culpa quae id. Ipsa nesciunt quam aspernatur ea nemo neque architecto est exercitationem.\n \rEnim eum maiores quos autem. Est laboriosam et qui sunt perspiciatis est quidem inventore mollitia. Deleniti iure beatae sed libero consequuntur quasi sunt distinctio quo. Nisi ut ex vitae labore."
+  },
+  {
+    "id": "77bb568c-70c9-4ca6-a5b8-bce3205f9d1c",
+    "name": "Constance, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=14",
+    "large_img": "https://placedog.net/600/600?id=14",
+    "price": "40.00",
+    "description": "Sit aspernatur ipsa soluta vitae. Et quia dolor perspiciatis. Dolor voluptatem saepe repellat occaecati minus excepturi. Sunt ratione dolor aliquam dicta fuga. Voluptatibus ratione ipsum officiis blanditiis enim aperiam et. Enim est aspernatur laborum maiores.\n \rIllum iusto in maiores corrupti. Voluptatem sequi laborum iusto rerum est omnis odit. Impedit ipsa necessitatibus perspiciatis aliquam quia doloribus illo natus. Totam nisi rerum ex ad tempore enim similique. Illo quia provident itaque corrupti facere.\n \rMolestiae quas inventore fugit iure facilis enim veniam similique voluptatibus. Ipsa architecto ducimus adipisci nihil possimus praesentium qui doloremque. A molestiae eum. Animi amet velit rem. Voluptates magni aperiam aspernatur et corporis at ipsa. Vitae aspernatur libero sunt earum modi nesciunt."
+  },
+  {
+    "id": "190b36ae-b837-4578-a573-2e785a996522",
+    "name": "Edmund, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=15",
+    "large_img": "https://placedog.net/600/600?id=15",
+    "price": "9.00",
+    "description": "Adipisci occaecati optio. Quia debitis praesentium est illo tempore ducimus in. Est voluptatem aliquid quidem qui delectus consequuntur et fuga consequuntur.\n \rSint culpa ea quas perspiciatis. Sint doloribus doloremque qui. Sequi omnis aut totam molestiae hic cupiditate in.\n \rDolores voluptatibus quaerat placeat aut fugiat sed natus quis debitis. Facilis quod voluptas rerum est ipsa voluptatum veritatis qui. Voluptatem et et reprehenderit nemo sequi voluptatibus quo."
+  },
+  {
+    "id": "9f6975df-8797-411b-9ac6-ec82f98971d8",
+    "name": "Christy, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=16",
+    "large_img": "https://placedog.net/600/600?id=16",
+    "price": "45.00",
+    "description": "Architecto voluptatibus iusto. Rem iure quos quos culpa minima. Alias officia ab odio. Sed quidem ab iste. Officia eos accusamus enim voluptatibus distinctio. Sint quidem commodi reprehenderit eum sit officiis.\n \rNecessitatibus voluptates non enim praesentium ullam. Sit quae et hic. Cumque iste hic. Officia aut voluptate ut et.\n \rAut voluptatibus quam rerum. Est consectetur deserunt commodi beatae consequatur saepe qui. Autem nulla et. Qui ea animi temporibus eos enim ducimus beatae. Dolorem eos qui aut qui enim deserunt facilis qui sed."
+  },
+  {
+    "id": "7701bf64-e4c3-4b19-8f37-29e74b4a9e16",
+    "name": "Marion, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=17",
+    "large_img": "https://placedog.net/600/600?id=17",
+    "price": "39.00",
+    "description": "Enim error omnis. Perferendis officiis dignissimos praesentium consequatur voluptatem vitae deserunt sapiente a. Reprehenderit incidunt voluptates numquam id rerum blanditiis esse.\n \rRepellat quia reiciendis aut neque maxime quia vel rerum iste. Et sit unde aut corporis magnam et. Quia qui cupiditate maxime doloremque. Repudiandae sit natus. Ab quia qui iste aliquid. Quae voluptatem vel consectetur dolor.\n \rMinima nostrum dolor. Nesciunt molestias qui similique velit. Est non optio."
+  },
+  {
+    "id": "6182c125-083e-42b9-9904-975122d226a9",
+    "name": "Ramon, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=18",
+    "large_img": "https://placedog.net/600/600?id=18",
+    "price": "32.00",
+    "description": "Dolores ut dolorem soluta provident eveniet aut nisi eos doloribus. Ullam saepe dolor quaerat quia suscipit consequatur quidem adipisci non. Sit eum iure nulla sed eveniet et excepturi laudantium facere. Voluptate neque pariatur quam voluptatem quos omnis quibusdam. Occaecati minus fugit quod est suscipit id maiores voluptates cupiditate. Ut laboriosam aut velit excepturi dolores expedita.\n \rQuibusdam cumque praesentium occaecati placeat. Fugit velit impedit. Velit quibusdam ea distinctio impedit sit ab deleniti ea eum. Sit praesentium recusandae consequatur sapiente vel tenetur.\n \rAperiam ipsa enim quam itaque non ipsum repudiandae ut porro. Unde quia consequuntur corrupti ea porro. Id eaque ullam molestias ea optio deleniti aliquid cupiditate. Facere aliquid iure sed inventore impedit consequatur est alias quia. Est velit dolor magni nostrum quo rerum fugit eum."
+  },
+  {
+    "id": "9d4ab6c6-0c90-4527-87e0-c877497e40e3",
+    "name": "Elsa, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=19",
+    "large_img": "https://placedog.net/600/600?id=19",
+    "price": "2.00",
+    "description": "Libero velit beatae. Ab quasi fugit cumque perspiciatis temporibus est rerum sint. Aut sunt cupiditate ratione. Blanditiis dolores dicta doloremque fuga animi molestiae. Dolorem esse quaerat.\n \rVoluptates suscipit et. Qui dicta non occaecati dolorem repellendus. Ut non in minima dolorem. Aliquam voluptatem molestiae ut nisi ratione delectus nulla consequatur a. Et velit accusamus hic assumenda molestias. Debitis enim adipisci et fugit quasi possimus.\n \rSequi voluptate mollitia est quia vero consequatur in. Itaque ea eveniet eum laborum autem. Sint fugit eum atque voluptas. Voluptatem odio expedita nostrum architecto accusamus natus animi. Autem omnis nisi earum consectetur non occaecati omnis blanditiis ex."
+  },
+  {
+    "id": "8c1c70d8-1428-4de3-9703-f41fcbc8cbb5",
+    "name": "Arnold, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=20",
+    "large_img": "https://placedog.net/600/600?id=20",
+    "price": "80.00",
+    "description": "Delectus natus voluptatum perspiciatis accusantium ullam et maxime. Molestiae similique aspernatur quia amet perspiciatis minus in. Sunt eum molestias est corporis veritatis libero. Labore accusantium voluptas exercitationem deserunt illum rerum fugit. Cumque et ex.\n \rCorrupti explicabo qui quia rerum est delectus. Molestias totam vel accusamus incidunt. Similique distinctio nihil eum saepe veritatis officia. Excepturi qui consectetur facere. Et consequuntur ab vel architecto nesciunt sit. Laborum et nam eveniet quaerat nam sequi unde amet voluptas.\n \rEius omnis doloremque ad esse vel optio necessitatibus veniam numquam. Est nobis eveniet repellat. Sit recusandae alias dolor necessitatibus omnis. Voluptate dolor error debitis at. Ratione eum tempora. Et nihil et est quam eveniet."
+  },
+  {
+    "id": "de80f98d-6470-4250-86c4-257845754d58",
+    "name": "Max, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=21",
+    "large_img": "https://placedog.net/600/600?id=21",
+    "price": "57.00",
+    "description": "Maiores natus deserunt et nobis ex tempora maxime explicabo eius. Et laudantium est itaque aut et error voluptatem. Maiores minus voluptate consequuntur et.\n \rConsectetur ut eaque temporibus molestias. Et quia officia distinctio ut. Aperiam at rem voluptates temporibus ratione explicabo odit. Praesentium qui temporibus. Beatae consequatur aut commodi sequi quo. Sed qui maxime occaecati iure quia culpa sapiente.\n \rEt veniam necessitatibus voluptatem. Earum et quibusdam id in quidem quo. Non iure quia quas aperiam officiis id quia. Placeat similique unde enim architecto qui consectetur."
+  },
+  {
+    "id": "725d510c-6ced-4b24-9ad7-b78a18f2fb7b",
+    "name": "Rochelle, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=22",
+    "large_img": "https://placedog.net/600/600?id=22",
+    "price": "35.00",
+    "description": "A qui et. Qui odio odio tempore neque repellat iusto. Molestiae at sunt aliquid perferendis rerum voluptatibus sunt provident aut. Aut earum dolorem fugit quam dolorum.\n \rEst aut molestiae magni animi. Ullam et voluptatem magni eum molestiae. Doloribus non est unde repellendus labore animi distinctio. Qui delectus explicabo repellendus aut aut laborum officiis aut. Rerum quia cum delectus rerum facere eligendi qui.\n \rDoloribus nam aliquam qui sit vel. Ducimus dolor et dolorem error. Quae quae quibusdam. Tempora doloribus atque."
+  },
+  {
+    "id": "114e6d21-7b13-475d-a809-9741865a2dcc",
+    "name": "Eugene, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=23",
+    "large_img": "https://placedog.net/600/600?id=23",
+    "price": "47.00",
+    "description": "Nesciunt enim porro eum deleniti est necessitatibus. Odit dignissimos et veritatis vel nihil rerum aut est. Aliquam sed ratione est consequatur suscipit asperiores beatae fugit.\n \rNatus vero occaecati ab quasi consequatur officia optio. Numquam accusantium iusto hic. Et quo enim nihil provident.\n \rHarum adipisci qui nostrum velit rem earum et aut. Esse delectus velit minus unde voluptatum natus. Dolorem provident odit nostrum porro optio aut ea."
+  },
+  {
+    "id": "5d19ebab-f805-4799-a86d-7c1642a6eea5",
+    "name": "Lola, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=24",
+    "large_img": "https://placedog.net/600/600?id=24",
+    "price": "96.00",
+    "description": "Nihil similique ut nihil qui saepe aperiam. Non dolores et cumque quia nostrum aut libero dolorem. Dolores consectetur enim. Sapiente illo pariatur maxime autem autem eligendi voluptatibus. Culpa et ipsum illum.\n \rCommodi sit repellendus illum sint nam ut quis nihil. Est ab maxime quo rem aspernatur. Et ab quos quo excepturi cumque dolore. Error et libero voluptatibus perferendis optio quis. Et facere eius et autem commodi quia. Aut et libero aperiam enim dolorem quos ut corporis.\n \rVoluptatibus rerum est nobis perferendis et animi quidem fuga. Architecto placeat est earum quia dignissimos. Maxime laborum rerum error maiores et non qui."
+  },
+  {
+    "id": "6138d5bb-6ce8-46f2-998c-d6226e60dad3",
+    "name": "Doreen, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=25",
+    "large_img": "https://placedog.net/600/600?id=25",
+    "price": "93.00",
+    "description": "Et adipisci id sed. Facere ut voluptatem quod reiciendis eum earum provident iusto voluptatum. Ad voluptatem et quia. Officiis eum laudantium. Tempora maxime maiores et iste commodi.\n \rAb autem ducimus distinctio expedita consequatur et explicabo. Hic aut temporibus. Quam et dolores tempore laboriosam quia nesciunt blanditiis recusandae dolorum.\n \rRepellendus officiis qui consequatur dolorum et vel quaerat iure ut. Vel ea minus temporibus autem dolorem. Hic dicta fuga expedita. Voluptatem voluptatem voluptatem voluptatem. Autem debitis quia sed dolorem dolor."
+  },
+  {
+    "id": "8989fb91-6bcd-406c-b8e6-9e0b90cc1012",
+    "name": "Darla, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=26",
+    "large_img": "https://placedog.net/600/600?id=26",
+    "price": "47.00",
+    "description": "Cum et voluptatem deleniti iure sequi sint. Quis dignissimos ratione impedit exercitationem fugiat illum aspernatur fuga quo. Quas dolores voluptas autem ut consectetur. Veritatis vel voluptatem deserunt sapiente quidem aliquam deserunt expedita expedita.\n \rEveniet autem deserunt a et. Libero autem aut deleniti iure excepturi id. Et sint saepe consequatur sit provident facere. Debitis amet officiis architecto.\n \rOfficia explicabo quia ut aliquam. Omnis sint sed odio saepe neque quod veniam. Sapiente facere ex voluptatem quis sint. Enim nostrum sed quibusdam in sunt temporibus voluptatem. Eos consequatur blanditiis sapiente officia eos totam."
+  },
+  {
+    "id": "7022559a-325e-4188-90c8-43b74271512b",
+    "name": "Jan, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=27",
+    "large_img": "https://placedog.net/600/600?id=27",
+    "price": "38.00",
+    "description": "Voluptatem quos consequatur ea blanditiis inventore. Sit iste sed repellat sit asperiores eos. Et quia pariatur est quia. Iure et eos incidunt.\n \rPorro voluptatibus voluptatem dolor id fugiat occaecati est. Ratione veniam aut a. Voluptates quia provident reiciendis vitae et culpa. Architecto mollitia animi repellat ut quia sit deleniti. Sapiente rerum suscipit cupiditate excepturi adipisci dignissimos est.\n \rCommodi fuga tempora dolor aperiam est nihil. Culpa dolorem aut sit modi cum eum fugit. Delectus fugiat esse consequatur voluptatibus. Nemo molestiae consequuntur officiis velit."
+  },
+  {
+    "id": "f0ff08ae-a082-4ddf-ade3-e00fded70ac4",
+    "name": "Rachael, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=28",
+    "large_img": "https://placedog.net/600/600?id=28",
+    "price": "66.00",
+    "description": "Ut dolor ut veritatis voluptatem. Sed omnis reiciendis. Minus repudiandae architecto qui. Qui culpa dolorem nemo placeat assumenda facilis voluptates voluptatibus. Alias distinctio iusto fuga rerum.\n \rVitae ea saepe rem consequuntur laboriosam itaque. Nemo quidem suscipit id dolores et. Quam beatae mollitia deleniti quidem illo illum ipsa. Saepe officia ex architecto sint earum quia voluptas.\n \rEarum consequatur nam sit facilis qui rerum. Ipsum non fugit aut dignissimos soluta a. Est nihil aut sit sunt ullam est. Odit sed ut. Expedita vero est vel vel omnis consequatur occaecati omnis totam."
+  },
+  {
+    "id": "5155f50a-b53d-4632-a32c-81731e8d15d0",
+    "name": "Paula, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=29",
+    "large_img": "https://placedog.net/600/600?id=29",
+    "price": "86.00",
+    "description": "Expedita voluptatum consectetur. Dolorum sapiente exercitationem nihil voluptas et voluptas hic pariatur perspiciatis. Unde nemo optio iusto maxime optio. Omnis consequuntur et quia praesentium et. Dolore quos sed ullam nihil. Magni error omnis officia laborum et temporibus.\n \rMaiores saepe molestiae accusantium et. Ut expedita et. Voluptatibus qui enim sit eius corrupti odio iusto. Ut omnis ducimus veritatis magni recusandae facilis quo repudiandae nihil. Fugit quod qui fugiat ut beatae natus maiores rerum dolores.\n \rDoloribus sunt hic deserunt. Sequi ipsam amet rerum. Officiis sed pariatur quasi. Unde molestiae velit cumque dolorem eos."
+  },
+  {
+    "id": "24c7e7e5-8f0b-436d-a772-a2928049b614",
+    "name": "Kari, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=30",
+    "large_img": "https://placedog.net/600/600?id=30",
+    "price": "30.00",
+    "description": "Quia et fugit ipsa deserunt qui velit ut ut non. Accusamus qui voluptatem unde est et. Dicta quis molestias ad corporis doloribus repellendus. Ut molestias illo. Ut explicabo pariatur sit.\n \rSed aliquam et quis ut quia. Et sequi eum vel ut unde facilis esse possimus eligendi. Numquam eos aperiam rerum.\n \rEt harum quos facilis assumenda deserunt eum ullam quis incidunt. Unde optio dicta occaecati. Iste non asperiores eligendi sint nesciunt eius. Minima debitis ab fugit necessitatibus laborum qui non dicta quis. Maxime laborum aliquid ipsam quae."
+  },
+  {
+    "id": "016c9196-4f6f-41e9-85e2-599d16dcd644",
+    "name": "Dolores, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=31",
+    "large_img": "https://placedog.net/600/600?id=31",
+    "price": "69.00",
+    "description": "Rerum ab voluptate amet vel omnis odit architecto tenetur. Rerum ut provident non. Dignissimos at inventore quidem maiores nihil ea atque numquam. Impedit rem quisquam rerum sequi ratione temporibus. At aut repudiandae corporis vel rerum molestias dicta.\n \rPerferendis et nam suscipit aut vel dolore voluptatem perferendis. Non qui culpa architecto ut libero distinctio quis amet. Aut qui et a doloribus esse architecto reprehenderit sit et. Ea repellat sed. Doloremque fugiat architecto.\n \rQuos deleniti recusandae a velit saepe hic doloribus. Officia aspernatur sit voluptatibus maiores. Quae aliquid rerum est accusamus quo. Dolorem voluptates voluptatem ipsum a."
+  },
+  {
+    "id": "f35ae498-4a7e-4bed-8922-e9b3fdd53155",
+    "name": "Essie, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=32",
+    "large_img": "https://placedog.net/600/600?id=32",
+    "price": "60.00",
+    "description": "Minus natus eaque perspiciatis. Ipsa ea error dolor recusandae quia minus eius. Officiis aliquid accusantium aut similique deleniti temporibus aut ad. Debitis debitis quos quia ut qui. Fugiat et rerum ducimus repellat natus enim quis.\n \rDolorem aut eaque et et facere est rerum sit voluptas. Fugiat quia dolor odio nihil rerum et aliquam molestias cum. Error ut magni. Quos voluptas occaecati quisquam sint reprehenderit culpa. Est repellat voluptates debitis ipsam voluptas praesentium.\n \rUllam reiciendis aut. Nulla et tenetur laudantium reiciendis. Accusantium eos mollitia vitae. Harum eveniet molestiae aliquid ut dolorem. Ex veritatis molestias neque numquam."
+  },
+  {
+    "id": "426e0f51-d150-441f-9ecf-22d4057af1fd",
+    "name": "Ana, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=33",
+    "large_img": "https://placedog.net/600/600?id=33",
+    "price": "8.00",
+    "description": "Qui sit non in at sit cum. Ad aut voluptas facere. Consectetur minima at quo sit. Iure sed ab repellendus. Reiciendis sequi qui in dignissimos fugit.\n \rCulpa voluptatem totam numquam incidunt ratione nesciunt. Voluptas dicta earum molestiae explicabo. Maiores hic provident pariatur.\n \rNostrum dolore et consequatur illum possimus dolor ut. Rerum perspiciatis veniam reiciendis consequuntur non magnam. Repellendus unde distinctio velit ea."
+  },
+  {
+    "id": "2626d56a-ad1d-416e-8328-d01c2e9be24e",
+    "name": "Beverly, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=34",
+    "large_img": "https://placedog.net/600/600?id=34",
+    "price": "27.00",
+    "description": "Consequatur nobis adipisci rerum. Doloribus in voluptate quae. Perspiciatis aspernatur aut et qui sed.\n \rOmnis enim eius consectetur voluptatem laboriosam porro totam nam. Amet et quod adipisci dolores quibusdam magnam et veniam. Totam laborum amet explicabo dignissimos illo quibusdam animi quo rem. Eos quia aut commodi. Dolores expedita non odit ut corrupti explicabo necessitatibus atque sit. Dolores expedita iste non mollitia quo voluptatem.\n \rVero repudiandae adipisci minima magnam dolores est minima totam pariatur. Quia harum amet nemo quia. Veritatis ut atque suscipit aut. Voluptatum quia qui doloribus impedit et rerum et quam consequuntur. Molestiae voluptatem porro officiis delectus cupiditate rerum voluptas itaque. In voluptas nesciunt asperiores voluptas omnis dolor quisquam voluptatum."
+  },
+  {
+    "id": "9a287aa0-3958-4a70-bfc5-45fe8bee3c11",
+    "name": "Jenny, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=35",
+    "large_img": "https://placedog.net/600/600?id=35",
+    "price": "78.00",
+    "description": "Iure ut dicta enim alias nulla unde. Eaque nemo quia quo sit fugiat sint vitae totam quasi. Qui labore quas quasi dolores ipsa autem possimus quo. Enim ipsa dolores. Culpa commodi dolor. Id voluptas nam quia nulla vitae quod.\n \rExcepturi sed alias nostrum tempore nobis optio aspernatur. Ut debitis omnis non consequatur iste dolor accusamus ea. In laudantium et itaque accusantium.\n \rId quo hic voluptatum. Facilis magnam doloremque nam illum error facilis cum dolor similique. Et vero quis voluptates et libero. Ut veritatis eos asperiores."
+  },
+  {
+    "id": "af4aaa71-b045-42b3-bb7b-5f8e8e38f4ba",
+    "name": "Chris, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=36",
+    "large_img": "https://placedog.net/600/600?id=36",
+    "price": "1.00",
+    "description": "Odio placeat eveniet autem. Quia omnis laboriosam. In quasi assumenda at maxime in eum. Earum quos eaque.\n \rUt illum nam doloremque. Amet officia nisi aliquid eaque rem qui dolorem natus. Voluptatum animi dolorum et molestiae accusamus consequuntur et. Ex nobis consequatur sed voluptatem dolores libero sunt. Voluptas voluptas aut eaque non assumenda amet. Et amet doloribus quod quasi illo eum odit.\n \rReprehenderit eligendi qui. Cumque quia molestias et quos temporibus sapiente. Aut qui assumenda. Distinctio eum perspiciatis ea sit impedit laboriosam deleniti. Sit blanditiis sint omnis. Ut ad minus fuga."
+  },
+  {
+    "id": "2ddb7802-f96a-49e8-8219-0faa5012b9b6",
+    "name": "Joanna, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=37",
+    "large_img": "https://placedog.net/600/600?id=37",
+    "price": "22.00",
+    "description": "Illum animi soluta non aut omnis. Nesciunt rerum nobis consequatur. Molestias eligendi est at totam. Rerum illo quaerat.\n \rVoluptatem aut neque blanditiis at. Ut similique velit iusto nobis ea consequatur quae sit quod. Harum delectus impedit nostrum. Sapiente expedita aut. Ex cumque est occaecati. In laboriosam tempora quas.\n \rSoluta ut ut soluta qui. Odit exercitationem quaerat sed magnam tenetur ut rerum nihil magnam. Maiores itaque repellat repellendus nihil aliquam."
+  },
+  {
+    "id": "f3ea980c-8a77-4d21-a87a-2e59621994e0",
+    "name": "Brian, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=38",
+    "large_img": "https://placedog.net/600/600?id=38",
+    "price": "37.00",
+    "description": "Odit autem sequi quibusdam a vel quis quae aliquid necessitatibus. Similique repellendus eos beatae. Culpa dicta aut provident non aut labore voluptatibus praesentium.\n \rExpedita soluta vero occaecati dolorum similique et omnis consequatur dolore. Commodi consequatur sunt est. Eos maiores illum non sed. Pariatur error odit quod consectetur perferendis quaerat aliquid commodi quaerat. Vero voluptates atque. Rerum placeat labore.\n \rTenetur quia voluptas enim aspernatur. Veritatis eaque natus. Ratione error deleniti quia ad animi. Temporibus vero quia dolorum tempore harum illum nobis vel. Nesciunt iure eaque incidunt dignissimos."
+  },
+  {
+    "id": "3f132afb-c3b5-4938-b6f7-aaaf4614bec6",
+    "name": "Flora, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=39",
+    "large_img": "https://placedog.net/600/600?id=39",
+    "price": "24.00",
+    "description": "Quis voluptatem et rerum tempora voluptas possimus suscipit. Dolores suscipit distinctio assumenda atque vero hic. Repellendus quo aut asperiores fugiat. Consequatur magnam qui accusantium sunt. Rerum nisi error nihil. Id ut quo molestias odit suscipit sapiente tempora.\n \rConsequuntur et debitis harum nihil recusandae dolorem libero occaecati veniam. Quas veniam consectetur vitae. Alias tenetur commodi expedita aut dolor iusto laudantium ut. Deleniti ut enim. In sit sunt dolorem expedita ipsam. At praesentium voluptatem in cupiditate quo sit aut et repudiandae.\n \rAccusantium voluptas totam esse velit. Ratione quia ad voluptatibus qui nulla reiciendis quod. Occaecati ut provident iusto ut assumenda unde fugit libero."
+  },
+  {
+    "id": "87222eb6-2929-411a-90f7-a0f8a6cba0dd",
+    "name": "Anita, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=40",
+    "large_img": "https://placedog.net/600/600?id=40",
+    "price": "59.00",
+    "description": "Aliquam veniam molestias temporibus vitae ut. Eos cum aut officia quos rerum incidunt nobis quae. Quia maxime fugiat animi corporis quo ducimus commodi et numquam.\n \rItaque iusto omnis neque itaque non reiciendis esse nobis. Sit minima quasi ut rerum sunt laboriosam. Adipisci quia odio ab debitis qui fugit nostrum explicabo hic.\n \rUllam rerum ipsam voluptas aspernatur dolor sed et voluptatem. Voluptas corporis qui ab nesciunt. Facere ea sit aut architecto doloribus. Officia doloremque corrupti. Eligendi vel maiores minus quia ut dolorem necessitatibus. Rerum fugit non aspernatur sunt ea."
+  },
+  {
+    "id": "0aed668b-c884-4a26-976b-d21e1686c2ad",
+    "name": "Jill, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=41",
+    "large_img": "https://placedog.net/600/600?id=41",
+    "price": "77.00",
+    "description": "Possimus cum quis deleniti rerum. Amet nam non saepe voluptatem consectetur provident odio aspernatur. Libero dolor omnis facilis debitis non sapiente.\n \rModi quasi ratione eum eius aut. Natus harum cumque odio adipisci nostrum ipsa necessitatibus aut. Aut qui officia voluptatem occaecati quibusdam provident nobis laboriosam. Veniam sequi eligendi.\n \rHarum nulla et dolorem eum blanditiis veniam et explicabo maiores. Veritatis eum non. Ut et quo nobis et reprehenderit incidunt. Nesciunt quod nisi eveniet. Neque sit tempore eum id non in autem architecto."
+  },
+  {
+    "id": "0afa4229-54a3-488a-82a3-f556817221e3",
+    "name": "Ervin, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=42",
+    "large_img": "https://placedog.net/600/600?id=42",
+    "price": "20.00",
+    "description": "Error et laboriosam omnis quam commodi aliquam. Voluptatibus eos et. Voluptate et quibusdam itaque impedit dolores fugiat. Aut ab voluptatem labore debitis autem ut. Alias perspiciatis eligendi nostrum earum. Iure aut illo.\n \rSunt assumenda eaque. Ad qui aliquam earum assumenda aliquid odio sed. Maiores suscipit asperiores. Natus in voluptas non.\n \rMaxime quas possimus. Numquam possimus aut. Omnis numquam totam. Aliquid nisi ut quia recusandae reiciendis velit laboriosam est. Aut officia quo unde vel."
+  },
+  {
+    "id": "7d757e8a-826b-458d-8272-b3ead070c4d9",
+    "name": "Lynn, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=43",
+    "large_img": "https://placedog.net/600/600?id=43",
+    "price": "40.00",
+    "description": "Excepturi voluptatem deserunt qui ea qui autem eos reprehenderit at. Quod dolorum saepe. Dolor accusantium nemo deserunt qui nostrum esse. Et earum ut et est amet aliquid debitis.\n \rMagni et harum nulla quia consequatur. Dolores quaerat reprehenderit est veniam sit culpa voluptatem. Praesentium veniam hic voluptas deleniti adipisci expedita.\n \rAtque unde quae eos odit non sed. Explicabo ut eum quam libero est eligendi voluptas consectetur natus. Mollitia sed a voluptatem iste. Itaque eum eum officia tempora deleniti harum aut necessitatibus magni. Omnis reprehenderit sed esse reprehenderit modi et rerum. Perspiciatis saepe molestiae."
+  },
+  {
+    "id": "85531d0b-6d13-4686-a079-d2e1b1395177",
+    "name": "Phillip, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=44",
+    "large_img": "https://placedog.net/600/600?id=44",
+    "price": "73.00",
+    "description": "Facere unde minima sint similique. Velit vel esse delectus. Sit et non non aspernatur.\n \rSimilique alias temporibus quasi modi sequi tempora voluptatem rerum qui. Laudantium repellat aperiam. Dolore optio quis aliquam et esse.\n \rLabore dicta porro illo soluta dolor earum. Voluptatibus recusandae cum optio nisi voluptas nisi saepe iusto. Eveniet molestiae fugit ullam qui unde. Eum minima minima repudiandae expedita ducimus. Necessitatibus aliquam earum sed dolores possimus cupiditate eaque. Nobis enim aut ut distinctio sequi et."
+  },
+  {
+    "id": "85eda121-203f-4d7d-85cf-c36e10722ea2",
+    "name": "Alfredo, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=45",
+    "large_img": "https://placedog.net/600/600?id=45",
+    "price": "31.00",
+    "description": "Voluptatem ullam velit exercitationem saepe sed. Adipisci quibusdam ipsam ut praesentium harum quod ipsum voluptatem. Sequi placeat adipisci voluptatibus temporibus qui aliquam.\n \rSunt qui quod earum. Id nobis neque unde nihil illo illum. Quos non autem doloremque quaerat ipsam. In voluptatem nisi unde vel amet.\n \rAccusantium quam accusantium aut velit. Voluptates dolorum voluptatem tenetur doloribus dolore. Esse dolore aut porro temporibus odit sed beatae dolorum. Quibusdam rem nulla enim nihil dolorem mollitia."
+  },
+  {
+    "id": "c47446ed-e044-4321-8cdf-92afe7934baf",
+    "name": "Eloise, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=46",
+    "large_img": "https://placedog.net/600/600?id=46",
+    "price": "44.00",
+    "description": "Vel beatae aut voluptate cum dicta architecto sed. Aliquid sapiente cupiditate ex aut perferendis cumque sunt eligendi vero. Sint illum suscipit voluptatum voluptas aut asperiores. Ab praesentium ex at.\n \rNulla quia et doloribus voluptatem enim sunt velit. Consequuntur voluptas eos reiciendis sed sit earum dolores. Dolores optio ut assumenda.\n \rMolestias natus corrupti dolorum dolorem. Consectetur et alias libero voluptatum magnam et voluptatibus ipsum quis. Reprehenderit voluptas hic soluta ut fugiat."
+  },
+  {
+    "id": "3d11107b-4321-42b8-8171-8cb2887a8bcf",
+    "name": "Winston, the Dog",
+    "gender": "male",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=47",
+    "large_img": "https://placedog.net/600/600?id=47",
+    "price": "49.00",
+    "description": "Et accusantium eum eum. Qui eos nihil magni tenetur quia. Iusto et a sed quod. Et quia et voluptatem nobis ratione aut et. Ratione voluptas vero qui.\n \rMolestiae quae in in dolores. Praesentium saepe nemo eaque eveniet voluptatem dignissimos. Sit enim et est aspernatur quis est et. Numquam dolore expedita.\n \rSit expedita tenetur quos aut vel vero voluptates occaecati. Ad enim earum mollitia. Dolores veritatis rerum similique asperiores aut omnis error. Ut incidunt dolores possimus mollitia sint ratione quidem. Deleniti repellendus facere deleniti delectus."
+  },
+  {
+    "id": "ee879cdb-bbd9-426e-8661-437ac05e14f4",
+    "name": "Kerry, the Dog",
+    "gender": "female",
+    "type_id": "933e8cad-1e6d-426f-bdb9-af540a6df3ad",
+    "thumbnail": "https://placedog.net/300/300?id=48",
+    "large_img": "https://placedog.net/600/600?id=48",
+    "price": "60.00",
+    "description": "Facilis necessitatibus voluptatibus voluptatum. Ea velit omnis suscipit. Sit odio odit alias ipsa voluptas nesciunt velit nulla. Error consequatur deserunt optio.\n \rExcepturi eveniet quidem qui molestiae fugit quisquam officiis rerum illo. Pariatur consequatur sunt illo qui odit dicta quo. Dolore nisi dolore exercitationem odio distinctio excepturi sint quia perspiciatis. Ut sint molestias in debitis aut et.\n \rIllum quia sit voluptatem in in. Atque rerum quia. Et libero ut nobis suscipit sunt veniam laborum placeat culpa. Repellendus et error consequatur. Quos totam in nemo dolor. Eos vero consectetur dolorem ut quis."
+  }
+]
