@@ -1,9 +1,10 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate, useParams } from "react-router-dom";
-import { getAnimal, addItemToCart } from "./ApiClient/ApiClient";
-import Button from "../components/Button";
+
+import { getAnimal, addItemToCart } from "~/api-client/ApiClient";
+import Button from "~/components/ui/Button";
 
 export default function AnimalViewPage(): ReactElement {
   const { id } = useParams<{ id: string }>();

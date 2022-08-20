@@ -1,5 +1,4 @@
-import { render, screen, waitFor, waitForElementToBeRemoved } from "@testing-library/react";
-import AppProvider from "../AppProvider";
+import { screen, waitForElementToBeRemoved } from "@testing-library/react";
 import renderWithAppProvider from "../test-utils/renderWithAppProvider";
 import AnimalTypesPage from "./AnimalTypesPage";
 

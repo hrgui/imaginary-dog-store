@@ -1,10 +1,9 @@
-import React from "react";
 import { Route, Routes } from "react-router";
-import AnimalViewPage from "./marketplace/AnimalViewPage";
-import AnimalsPage from "./marketplace/AnimalsPage";
-import AnimalTypesPage from "./marketplace/AnimalTypesPage";
-import CollectionPage from "./marketplace/CollectionPage";
-import CheckoutPage from "./marketplace/CheckoutPage";
+import AnimalViewPage from "~/pages/AnimalViewPage";
+import AnimalsPage from "~/pages/AnimalsPage";
+import AnimalTypesPage from "~/pages/AnimalTypesPage";
+import CollectionPage from "~/pages/CollectionPage";
+import CheckoutPage from "~/pages/CheckoutPage";
 
 type Props = {};
 

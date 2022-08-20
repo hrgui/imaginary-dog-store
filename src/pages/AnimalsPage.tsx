@@ -1,9 +1,10 @@
 import React, { ReactElement, useEffect } from "react";
-import SearchFilters from "./SearchFilters";
-import ItemsGrid from "./AnimalsGrid";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { getAnimals } from "./ApiClient/ApiClient";
+
+import SearchFilters from "~/components/shop/SearchFilters";
+import ItemsGrid from "~/components/shop/AnimalsGrid";
+import { getAnimals } from "~/api-client/ApiClient";
 
 interface Props {
   filters?: PetFilters;

@@ -2,8 +2,9 @@ import React, { ReactElement } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
-import { getCart, checkout } from "./ApiClient/ApiClient";
-import Animal from "./AnimalCell";
+
+import { getCart, checkout } from "~/api-client/ApiClient";
+import Animal from "~/components/shop/AnimalCell";
 
 function getTotal(items: Animal[]) {
   return items

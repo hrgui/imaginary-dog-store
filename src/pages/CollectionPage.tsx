@@ -1,11 +1,11 @@
 import React, { ReactElement } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
-import { getCollection } from "./ApiClient/ApiClient";
-import Animal from "./AnimalCell";
+
+import { getCollection } from "~/api-client/ApiClient";
+import Animal from "../components/shop/AnimalCell";
 
 export default function CollectionPage(): ReactElement {
-  const navigate = useNavigate();
   const { isLoading, data: items } = useQuery<any>(["collection"], getCollection);
 
   if (isLoading) {

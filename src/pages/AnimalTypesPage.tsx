@@ -1,8 +1,8 @@
 import React, { ReactElement } from "react";
-import ItemsGrid from "./AnimalTypesGrid";
+import ItemsGrid from "~/components/shop/AnimalTypesGrid";
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { getAnimalTypes } from "./ApiClient/ApiClient";
+import { getAnimalTypes } from "~/api-client/ApiClient";
 
 export default function AnimalTypesPage(): ReactElement {
   const { isLoading, data: items = [] } = useQuery<any, any>(["items"], getAnimalTypes);

@@ -1,6 +1,6 @@
 import { fireEvent, screen } from "@testing-library/react";
-import AppRoutes from "../AppRoutes";
-import renderWithAppProvider from "../test-utils/renderWithAppProvider";
+import AppRoutes from "~/AppRoutes";
+import renderWithAppProvider from "~/test-utils/renderWithAppProvider";
 import userEvent from "@testing-library/user-event";
 
 describe("buy now and regular click", () => {
