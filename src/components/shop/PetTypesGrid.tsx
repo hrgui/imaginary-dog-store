@@ -7,7 +7,7 @@ interface Props {
   onItemView: (item: PetType) => any;
 }
 
-export default function AnimalTypesGrid({ className, petTypes }: Props): ReactElement {
+export function PetTypesGrid({ className, petTypes }: Props): ReactElement {
   return (
     <div className={className}>
       <div>Showing {petTypes.length} pet types</div>
@@ -19,3 +19,5 @@ export default function AnimalTypesGrid({ className, petTypes }: Props): ReactEl
     </div>
   );
 }
+
+export default PetTypesGrid;

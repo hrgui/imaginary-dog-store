@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import ItemsGrid from "~/components/shop/PetTypesGrid";
+import PetTypesGrid from "~/components/shop/PetTypesGrid";
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { getAnimalTypes } from "~/api-client/ApiClient";
@@ -18,7 +18,7 @@ export function PetTypesPage(): ReactElement {
 
   return (
     <div className="flex">
-      <ItemsGrid petTypes={items} onItemView={({ id }) => navigate(`/item/${id}`)} />
+      <PetTypesGrid petTypes={items} onItemView={({ id }) => navigate(`/item/${id}`)} />
     </div>
   );
 }
