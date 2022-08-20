@@ -7,6 +7,7 @@ import { worker } from "./mocks/browser";
 async function bootstrap() {
   //TODO: pathname is naive - it doesn't work but github pages will 404 upon reload
   await worker.start({
+    onUnhandledRequest: "error",
     serviceWorker: {
       url: import.meta.env.PROD
         ? window.location.pathname + "/mockServiceWorker.js"
