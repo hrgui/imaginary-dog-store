@@ -1,1 +1,1 @@
-export const API_DOMAIN = "https://www.harmanradix.com";
+export const API_DOMAIN = import.meta.env.PROD ? "" : "https://www.harmanradix.com";
