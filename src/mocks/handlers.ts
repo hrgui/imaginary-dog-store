@@ -2,6 +2,7 @@ import { MockedRequest, rest } from "msw";
 import Fuse from "fuse.js";
 import _pets from "~/fixtures/pets.json";
 import _animaTypes from "~/fixtures/pet_types.json";
+import { API_DOMAIN } from "~/constants";
 
 let pets: Pet[] = _pets;
 let petTypes: PetType[] = _animaTypes;
@@ -26,7 +27,7 @@ function findHighestPricedPet(petType: PetType) {
 }
 
 export const handlers = [
-  rest.post("https://example.pet.shop/login", (req: MockedRequest<any>, res, ctx) => {
+  rest.post(`${API_DOMAIN}/login`, (req: MockedRequest<any>, res, ctx) => {
     const { username } = req.body;
 
     return res(
@@ -39,7 +40,7 @@ export const handlers = [
     );
   }),
   rest.get(
-    "https://example.pet.shop/api/search/:type",
+    `${API_DOMAIN}/api/search/:type`,
     (req: MockedRequest<any, PetSearchParams>, res, ctx) => {
       const { type } = req.params;
       if (type === "pet_type") {
@@ -84,10 +85,10 @@ export const handlers = [
       return res(ctx.json(returnedPets));
     }
   ),
-  rest.get("https://example.pet.shop/api/cart", (req: MockedRequest<Pet>, res, ctx) => {
+  rest.get(`${API_DOMAIN}/api/cart`, (req: MockedRequest<Pet>, res, ctx) => {
     return res(ctx.json(cart));
   }),
-  rest.post("https://example.pet.shop/api/cart", (req: MockedRequest<Pet>, res, ctx) => {
+  rest.post(`${API_DOMAIN}/api/cart`, (req: MockedRequest<Pet>, res, ctx) => {
     const item = req.body;
 
     const isAlreadyACartItem = cart.filter((cartItem) => cartItem.id === item.id)[0];
@@ -99,7 +100,7 @@ export const handlers = [
     return res(ctx.json(cart));
   }),
   rest.get(
-    "https://example.pet.shop/api/pet/:itemId",
+    `${API_DOMAIN}/api/pet/:itemId`,
     (req: MockedRequest<any, { itemId: string }>, res, ctx) => {
       const { itemId } = req.params;
 
@@ -112,10 +113,10 @@ export const handlers = [
       return res(ctx.json(item));
     }
   ),
-  rest.get("https://example.pet.shop/api/collection", (req, res, ctx) => {
+  rest.get(`${API_DOMAIN}/api/collection`, (req, res, ctx) => {
     return res(ctx.json(myCollection));
   }),
-  rest.post("https://example.pet.shop/api/checkout", (req: MockedRequest<Pet[]>, res, ctx) => {
+  rest.post(`${API_DOMAIN}/api/checkout`, (req: MockedRequest<Pet[]>, res, ctx) => {
     const body = req.body;
 
     for (const pet of body) {
