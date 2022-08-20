@@ -1,5 +1,3 @@
-/// <reference types="react-scripts" />
-
 interface Animal {
   /** ID of the animal */
   id: string;

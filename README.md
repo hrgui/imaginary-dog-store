@@ -32,25 +32,96 @@ sequenceDiagram
 
 # API
 
-## /api/search/animal_type
+See [`./src/types.d.ts`](./src/types.d.ts) for more info.
 
-Fetches all possible animal types.
+## /api/search/:type
+
+Does a search for animals or animal types.
+
+### Input
+
+#### InputParams
+
+```ts
+interface AnimalSearchParams {
+  type: "animal_type" | "animal";
+}
+```
+
+#### SearchParams
+
+```ts
+interface PetFilters {
+  name?: string;
+  type_id?: string | null;
+  min_price: number;
+  max_price: number;
+}
+```
+
+### Output
+
+```ts
+type Output = Animal[];
+```
 
 ## /api/animal/:id
 
 Fetches one animal.
 
+### Output
+
+#### 404 Error
+
+No content
+
+#### 200 Success
+
+```ts
+type Output = Animal[];
+```
+
 ## /api/checkout
 
-Checks out the user.
+- Checks out the user, takes out the items from the cart from inventory.
+- Adds the item to their collection
+
+### Output
+
+#### 200 Success
+
+```ts
+type Output = Animal[];
+```
 
 ## /api/cart
 
 Adds the item to the cart.
 
+### Output
+
+#### 200 Success
+
+```ts
+type Output = Animal[];
+```
+
+## /collection
+
+Obtains their collection. Can return nothing back.
+
+### Output
+
+#### 200 Success
+
+```ts
+type Output = Animal[];
+```
+
 # Tech Stack
 
-- [React](https://reactjs.org/) for react componnets.
+- [React](https://reactjs.org/) for react components.
+- [TailwindCSS](https://tailwindcss.com/) for CSS
 - [Vite](https://vitejs.dev/) for the development environment
 - [Vitest](https://vitest.dev/) for the test environment
 - [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/) for fetching data
