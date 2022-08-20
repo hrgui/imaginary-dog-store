@@ -18,7 +18,7 @@ export function PetTypesPage(): ReactElement {
 
   return (
     <div className="flex">
-      <ItemsGrid animal_types={items} onItemView={({ id }) => navigate(`/item/${id}`)} />
+      <ItemsGrid petTypes={items} onItemView={({ id }) => navigate(`/item/${id}`)} />
     </div>
   );
 }

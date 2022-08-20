@@ -1,36 +1,34 @@
 import { ReactElement } from "react";
 import { Link } from "react-router-dom";
 
-interface Props {
-  animal_type: PetType;
-}
+type Props = {} & PetType;
 
-export function PetTypeCell({ animal_type }: Props): ReactElement {
-  const animalTypeData = (
+export function PetTypeCell({ id, name, thumbnail, low, high, count }: Props): ReactElement {
+  const typeDataEl = (
     <div className="mr-4 mb-4 cursor-pointer w-full sm:w-auto">
-      <h2 className="text-2xl font-semibold">{animal_type.name}(s)</h2>
+      <h2 className="text-2xl font-semibold">{name}(s)</h2>
       <div className="w-full sm:w-[300px] h-[300px] bg-gray-200">
         <img
           loading="lazy"
-          src={animal_type.thumbnail}
+          src={thumbnail}
           className="w-full sm:w-[300px] h-[300px] object-cover"
-          alt={animal_type.name}
+          alt={name}
         />
       </div>
-      {animal_type.low?.price && <h3>Lowest Price: ${animal_type.low?.price}</h3>}
-      {animal_type.high?.price && <h3>Highest Price: ${animal_type.high?.price}</h3>}
-      {animal_type.count <= 0 && <h4>SOLD OUT</h4>}
-      {animal_type.count <= 10 && animal_type.count > 0 && <h4>Only {animal_type.count} left!</h4>}
+      {low?.price && <h3>Lowest Price: ${low?.price}</h3>}
+      {high?.price && <h3>Highest Price: ${high?.price}</h3>}
+      {count <= 0 && <h4>SOLD OUT</h4>}
+      {count <= 10 && count > 0 && <h4>Only {count} left!</h4>}
     </div>
   );
 
-  if (animal_type.count <= 0) {
-    return animalTypeData;
+  if (count <= 0) {
+    return typeDataEl;
   }
 
   return (
-    <Link to={`/animals?type_id=${animal_type.id}`} className="w-full sm:w-auto">
-      {animalTypeData}
+    <Link to={`/animals?type_id=${id}`} className="w-full sm:w-auto">
+      {typeDataEl}
     </Link>
   );
 }
