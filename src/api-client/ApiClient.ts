@@ -33,6 +33,18 @@ export async function checkout(cart: Pet[]) {
   return res.json();
 }
 
+export async function removeFromCart(cart: Pet[]) {
+  const res = await fetch(`${API_DOMAIN}/api/cart`, {
+    method: "DELETE",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(cart),
+  });
+  return res.json();
+}
+
 export async function addItemToCart(data: Pet) {
   const res = await fetch(`${API_DOMAIN}/api/cart`, {
     method: "POST",

@@ -3,7 +3,7 @@ import { useMutation } from "@tanstack/react-query";
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 
-import { getCart, checkout } from "~/api-client/ApiClient";
+import { getCart, checkout, removeFromCart } from "~/api-client/ApiClient";
 import PetCell from "~/components/shop/PetCell";
 import PageLoading from "~/components/app/PageLoading";
 import PetsGrid from "~/components/shop/PetsGrid";
@@ -20,13 +20,19 @@ function getTotal(items: Pet[]) {
 }
 
 export default function CheckoutPage(): ReactElement {
-  const { data, isLoading } = useQuery<Pet[]>(["cart"], getCart);
-  const mutation = useMutation<any, any, Pet[]>(checkout);
+  const { data, isLoading, refetch } = useQuery<Pet[]>(["cart"], getCart);
+  const checkoutMutation = useMutation<any, any, Pet[]>(checkout);
+  const removeFromCartMutation = useMutation<any, any, Pet[]>(removeFromCart);
   const navigate = useNavigate();
 
   async function doPayNow() {
-    await mutation.mutateAsync(data!);
+    await checkoutMutation.mutateAsync(data!);
     navigate("/collection");
+  }
+
+  async function removePetFromCart(pet: Pet) {
+    await removeFromCartMutation.mutateAsync([pet]);
+    await refetch();
   }
 
   if (isLoading) {
@@ -53,7 +59,7 @@ export default function CheckoutPage(): ReactElement {
         Pay now
       </Button>
 
-      {data.map(({ thumbnail, name, price }) => (
+      {data.map(({ thumbnail, name, price, id }) => (
         <Card className="flex gap-2 p-2 mt-4 mb-4">
           <div className="m-2">
             <img className="w-20 h-20 rounded-sm object-cover" src={thumbnail} alt={name} />
@@ -61,6 +67,9 @@ export default function CheckoutPage(): ReactElement {
           <div>
             <h1 className="text-2xl">{name}</h1>
             <h3 className="text-xl">${price}</h3>
+            <Button onClick={() => removePetFromCart({ id } as Pet)} variant="danger">
+              Delete
+            </Button>
           </div>
         </Card>
       ))}

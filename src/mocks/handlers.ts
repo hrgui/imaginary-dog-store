@@ -7,7 +7,7 @@ import { API_DOMAIN } from "~/constants";
 let pets: Pet[] = _pets;
 let petTypes: PetType[] = _animaTypes;
 let myCollection: any[] = [];
-let cart: any[] = [];
+let cart: Pet[] = [];
 
 function sortPetsWithTypeDesc(type_id: string) {
   const allPetsWithType = pets.filter((pet) => pet.type_id === type_id);
@@ -39,57 +39,55 @@ export const handlers = [
       })
     );
   }),
-  rest.get(
-    `${API_DOMAIN}/api/search/:type`,
-    (req: MockedRequest<any, PetSearchParams>, res, ctx) => {
-      const { type } = req.params;
-      if (type === "pet_type") {
-        return res(ctx.json(petTypes));
-      }
-
-      // otherwise type is pets
-      let returnedPets = pets;
-
-      if (req.url.search) {
-        if (req.url.searchParams.has("type_id")) {
-          const typeIdToSearch = req.url.searchParams.get("type_id");
-          const typeIds = petTypes.map((pet) => pet.id);
-
-          const isValidTypeId = typeIds.indexOf(typeIdToSearch!) !== -1;
-
-          if (isValidTypeId) {
-            returnedPets = returnedPets.filter((pet) => {
-              return pet.type_id === typeIdToSearch;
-            });
-          }
-        }
-
-        if (req.url.searchParams.has("min_price") && req.url.searchParams.get("min_price")) {
-          returnedPets = returnedPets.filter((pet) => {
-            return +req.url.searchParams.get("min_price")! <= +pet.price;
-          });
-        }
-
-        if (req.url.searchParams.has("max_price")) {
-          returnedPets = returnedPets.filter((pet) => {
-            return +pet.price <= +req.url.searchParams.get("max_price")!;
-          });
-        }
-
-        if (req.url.searchParams.has("name") && req.url.searchParams.get("name")) {
-          const fuse = new Fuse(returnedPets, { keys: ["name"] });
-          returnedPets = fuse.search(req.url.searchParams.get("name")!).map((x) => x.item);
-        }
-      }
-
-      return res(ctx.json(returnedPets));
+  rest.get(`${API_DOMAIN}/api/search/:type`, (req: MockedRequest<any>, res, ctx) => {
+    //TODO: req.params not defined anymore? :thinking:
+    const { type } = (req as any).params;
+    if (type === "pet_type") {
+      return res(ctx.json(petTypes));
     }
-  ),
-  rest.get(`${API_DOMAIN}/api/cart`, (req: MockedRequest<Pet>, res, ctx) => {
+
+    // otherwise type is pets
+    let returnedPets = pets;
+
+    if (req.url.search) {
+      if (req.url.searchParams.has("type_id")) {
+        const typeIdToSearch = req.url.searchParams.get("type_id");
+        const typeIds = petTypes.map((pet) => pet.id);
+
+        const isValidTypeId = typeIds.indexOf(typeIdToSearch!) !== -1;
+
+        if (isValidTypeId) {
+          returnedPets = returnedPets.filter((pet) => {
+            return pet.type_id === typeIdToSearch;
+          });
+        }
+      }
+
+      if (req.url.searchParams.has("min_price") && req.url.searchParams.get("min_price")) {
+        returnedPets = returnedPets.filter((pet) => {
+          return +req.url.searchParams.get("min_price")! <= +pet.price;
+        });
+      }
+
+      if (req.url.searchParams.has("max_price")) {
+        returnedPets = returnedPets.filter((pet) => {
+          return +pet.price <= +req.url.searchParams.get("max_price")!;
+        });
+      }
+
+      if (req.url.searchParams.has("name") && req.url.searchParams.get("name")) {
+        const fuse = new Fuse(returnedPets, { keys: ["name"] });
+        returnedPets = fuse.search(req.url.searchParams.get("name")!).map((x) => x.item);
+      }
+    }
+
+    return res(ctx.json(returnedPets));
+  }),
+  rest.get(`${API_DOMAIN}/api/cart`, (req, res, ctx) => {
     return res(ctx.json(cart));
   }),
-  rest.post(`${API_DOMAIN}/api/cart`, (req: MockedRequest<Pet>, res, ctx) => {
-    const item = req.body;
+  rest.post<{ item: Pet }>(`${API_DOMAIN}/api/cart`, async (req, res, ctx) => {
+    const item = await req.json();
 
     const isAlreadyACartItem = cart.filter((cartItem) => cartItem.id === item.id)[0];
 
@@ -99,20 +97,26 @@ export const handlers = [
 
     return res(ctx.json(cart));
   }),
-  rest.get(
-    `${API_DOMAIN}/api/pet/:itemId`,
-    (req: MockedRequest<any, { itemId: string }>, res, ctx) => {
-      const { itemId } = req.params;
+  rest.delete<{ items: Pet[] }>(`${API_DOMAIN}/api/cart`, async (req, res, ctx) => {
+    const items: Pet[] = await req.json();
 
-      const item: Pet = pets.filter((item: Pet) => item.id + "" === itemId)?.[0];
+    const itemIdsToDelete = items.map((item) => item.id);
 
-      if (!item) {
-        return res(ctx.status(404));
-      }
+    setMyCart(cart.filter((cartItem) => !itemIdsToDelete.includes(cartItem.id)));
 
-      return res(ctx.json(item));
+    return res(ctx.json(cart));
+  }),
+  rest.get(`${API_DOMAIN}/api/pet/:itemId`, (req, res, ctx) => {
+    const { itemId } = req.params;
+
+    const item: Pet = pets.filter((item: Pet) => item.id + "" === itemId)?.[0];
+
+    if (!item) {
+      return res(ctx.status(404));
     }
-  ),
+
+    return res(ctx.json(item));
+  }),
   rest.get(`${API_DOMAIN}/api/collection`, (req, res, ctx) => {
     return res(ctx.json(myCollection));
   }),
@@ -147,4 +151,8 @@ export function reset() {
 
 export function setMyCollection(collection: Pet[]) {
   myCollection = collection;
+}
+
+export function setMyCart(_cart: Pet[]) {
+  cart = _cart;
 }
