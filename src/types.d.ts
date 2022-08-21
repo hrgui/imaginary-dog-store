@@ -13,6 +13,7 @@ interface Pet {
   price: string;
   /** Pet Type ID */
   type_id: string;
+  description: string;
 }
 
 interface PetType {

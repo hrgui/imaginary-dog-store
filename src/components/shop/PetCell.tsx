@@ -4,6 +4,7 @@ import { useMutation } from "@tanstack/react-query";
 import { addItemToCart } from "~/api-client/ApiClient";
 import classnames from "classnames";
 import Button from "../ui/Button";
+import Card from "../ui/Card";
 
 type Props = {
   onView?: (item: Pet) => any;
@@ -25,8 +26,8 @@ export function PetCell(props: Props): ReactElement {
   }
 
   return (
-    <div
-      className={classnames("flex flex-col w-full sm:w-auto", {
+    <Card
+      className={classnames("flex flex-col w-full sm:w-auto hover:scale-105 transition-all", {
         ["cursor-pointer"]: !isCollection,
       })}
     >
@@ -34,14 +35,21 @@ export function PetCell(props: Props): ReactElement {
         onClick={() => !isCollection && onView?.(item)}
         className={classnames("text-left", { ["cursor-pointer"]: isCollection })}
       >
-        <h2 className="text-2xl font-semibold">{name}</h2>
-        <div className="w-full bg-gray-200">
-          <img loading="lazy" src={thumbnail} className="w-full object-cover" alt={name} />
+        <div className="w-full bg-gray-200 rounded-t-lg">
+          <img
+            loading="lazy"
+            src={thumbnail}
+            className="w-full rounded-t-lg object-cover"
+            alt={name}
+          />
         </div>
-        {!isCollection && <h3>${price}</h3>}
+        <div className="p-4">
+          <h2 className="text-2xl font-semibold">{name}</h2>
+          {!isCollection && <h3>${price}</h3>}
+        </div>
       </button>
       {hasBuyNow && <Button onClick={() => handleBuyItem(item)}>Buy Now</Button>}
-    </div>
+    </Card>
   );
 }
 
