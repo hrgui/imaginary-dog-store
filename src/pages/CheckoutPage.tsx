@@ -7,6 +7,9 @@ import { getCart, checkout } from "~/api-client/ApiClient";
 import PetCell from "~/components/shop/PetCell";
 import PageLoading from "~/components/app/PageLoading";
 import PetsGrid from "~/components/shop/PetsGrid";
+import ArrowLeft from "~/components/ui/icons/ArrowLeft";
+import Button from "~/components/ui/Button";
+import Card from "~/components/ui/Card";
 
 function getTotal(items: Pet[]) {
   return items
@@ -36,18 +39,33 @@ export default function CheckoutPage(): ReactElement {
 
   return (
     <div>
-      <h1 className="text-3xl">Checkout</h1>
-      <button onClick={() => navigate(-1)}>go back</button>
+      <div className="flex gap-2 mt-2 mb-2">
+        <button onClick={() => navigate(-1)}>
+          <ArrowLeft />
+          <span className="sr-only">go back</span>
+        </button>
 
-      <PetsGrid pets={data} hasBuyNow={false} />
+        <h1 className="text-3xl">Checkout</h1>
+      </div>
 
-      <h1>Total: ${getTotal(data)}</h1>
-      <button
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-        onClick={doPayNow}
-      >
+      <h1 className="font-semibold text-xl">Total: ${getTotal(data)}</h1>
+      <Button className="w-full" onClick={doPayNow}>
         Pay now
-      </button>
+      </Button>
+
+      {data.map(({ thumbnail, name, price }) => (
+        <Card className="flex gap-2 p-2 mt-4 mb-4">
+          <div className="m-2">
+            <img className="w-20 h-20 rounded-sm object-cover" src={thumbnail} alt={name} />
+          </div>
+          <div>
+            <h1 className="text-2xl">{name}</h1>
+            <h3 className="text-xl">${price}</h3>
+          </div>
+        </Card>
+      ))}
+
+      <h1 className="font-semibold text-xl text-right">Total: ${getTotal(data)}</h1>
     </div>
   );
 }
