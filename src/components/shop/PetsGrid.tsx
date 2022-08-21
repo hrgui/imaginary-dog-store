@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import Divider from "../ui/Divider";
 import PetCell from "./PetCell";
 
 interface Props {
@@ -20,7 +21,8 @@ export function PetsGrid({
 }: Props): ReactElement {
   return (
     <div className={className}>
-      {!isLoading && <div>Showing {pets.length} pets</div>}
+      {!isLoading && <span className="mb-2 mt-2 block">Showing {pets.length} pets</span>}
+      <Divider />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
         {pets.map((pet) => {
           return (

@@ -16,11 +16,7 @@ export function PetTypesPage(): ReactElement {
     return <PageLoading />;
   }
 
-  return (
-    <div className="flex">
-      <PetTypesGrid petTypes={items} onItemView={({ id }) => navigate(`/item/${id}`)} />
-    </div>
-  );
+  return <PetTypesGrid petTypes={items} onItemView={({ id }) => navigate(`/item/${id}`)} />;
 }
 
 export default PetTypesPage;
