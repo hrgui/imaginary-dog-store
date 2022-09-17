@@ -39,7 +39,7 @@ export function PetsPage({ filters: defaultFilters, ...props }: Props): ReactEle
       <PetsGrid
         isLoading={isLoading}
         pets={items}
-        className="w-full sm:w-[75%] sm:ml-[8px]"
+        className="w-full sm:w-[75%] sm:ml-6"
         onItemView={({ id }) => navigate(`/item/${id}`)}
       />
     </div>
