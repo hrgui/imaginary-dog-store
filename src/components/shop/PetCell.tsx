@@ -35,7 +35,7 @@ export function PetCell(props: Props): ReactElement {
         onClick={() => !isCollection && onView?.(item)}
         className={classnames("text-left", { ["cursor-pointer"]: isCollection })}
       >
-        <div className="w-full relative min-h-[320px] sm:min-h-[165px] lg:min-h-[210px] bg-gray-800 rounded-t-lg">
+        <div className="w-full relative min-h-[320px] sm:min-h-[165px] lg:min-h-[210px] rounded-t-lg overflow-hidden">
           <div className="w-full h-full bg-black animate-pulse absolute z-0"></div>
           <img
             loading="lazy"
