@@ -7,7 +7,7 @@ type Props = {} & Partial<PetType>;
 export function PetTypeCell({ id, name, thumbnail, low, high, count = 0 }: Props): ReactElement {
   const typeDataEl = (
     <Card className="cursor-pointer w-full sm:w-auto hover:scale-105 transition-all">
-      <div className="w-full rounded-t-lg bg-gray-200">
+      <div className="w-full min-h-[232px] lg:min-h-[318px] rounded-t-lg bg-gray-200">
         <img
           loading="lazy"
           src={thumbnail}
