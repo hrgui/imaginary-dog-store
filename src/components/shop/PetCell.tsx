@@ -48,7 +48,11 @@ export function PetCell(props: Props): ReactElement {
           {!isCollection && <h3>${price}</h3>}
         </div>
       </button>
-      {hasBuyNow && <Button onClick={() => handleBuyItem(item)}>Buy Now</Button>}
+      {hasBuyNow && (
+        <Button className="mt-auto" onClick={() => handleBuyItem(item)}>
+          Buy Now
+        </Button>
+      )}
     </Card>
   );
 }
