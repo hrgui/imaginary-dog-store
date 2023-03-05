@@ -1,4 +1,4 @@
-name: Build for Github Pages
+name: Unit Test
 on:
   workflow_dispatch:
   push:
@@ -11,28 +11,4 @@ on:
       - main
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.6.0
-        with:
-          access_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: ⬇️ Checkout repo
-        uses: actions/checkout@v3
-
-      - name: ⎔ Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: 📥 Download deps
-        uses: bahmutov/npm-install@v1
-
-      - name: 🧪 Test
-        run: |
-          yarn test --silent --coverage
-          echo "### Test Results 🧪 "  >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`"  >> $GITHUB_STEP_SUMMARY
-          yarn c8 report >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`"  >> $GITHUB_STEP_SUMMARY
+    uses: hrgui/my-personal-gh-workflows/.github/workflows/unit_test.yml@main
