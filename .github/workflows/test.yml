@@ -10,5 +10,5 @@ on:
     branches:
       - main
 jobs:
-  build:
+  unit-test:
     uses: hrgui/my-personal-gh-workflows/.github/workflows/unit_test.yml@main
