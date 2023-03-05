@@ -8,6 +8,7 @@
     "start": "yarn dev",
     "dev": "vite dev --port 3000",
     "test": "vitest",
+    "lint": "echo 'no lint step'",
     "build": "vite build"
   },
   "eslintConfig": {
