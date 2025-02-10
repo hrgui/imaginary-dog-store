@@ -11,4 +11,4 @@ on:
       - main
 jobs:
   unit-test:
-    uses: hrgui/my-personal-gh-workflows/.github/workflows/unit_test.yml@main
+    uses: hrgui/my-personal-gh-workflows/.github/workflows/npm_unit_test.yml@main
